@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://i-fanr.com/"/>
-  <updated>2016-07-23T09:52:18.000Z</updated>
+  <updated>2016-08-08T06:25:20.000Z</updated>
   <id>http://i-fanr.com/</id>
   
   <author>
@@ -14,6 +14,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>WordPress用户密码忘记且无法重置的解决办法</title>
+    <link href="http://i-fanr.com/2016/08/08/wp-change-pass/"/>
+    <id>http://i-fanr.com/2016/08/08/wp-change-pass/</id>
+    <published>2016-08-08T06:20:25.000Z</published>
+    <updated>2016-08-08T06:25:20.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>你忘记密码通过找回密码页面发送重置密码页面的时候可能还会遇到接收不到邮件的情况。怎么办呢?垃圾邮件中也没有。。。怎么办？</p>
+<h3 id="办法1：通过phpMyAdmin来重置密码"><a href="#办法1：通过phpMyAdmin来重置密码" class="headerlink" title="办法1：通过phpMyAdmin来重置密码"></a>办法1：通过phpMyAdmin来重置密码</h3><p>step1：通过cpanel或者DA等主机管理工具登陆到phpMyAdmin ，并选择自己使用的数据库；</p>
+<p>step2：打开wp_users 表（或者会带有前缀的，但表名以users结尾）；</p>
+<p>step3：找到自己的用户名并编辑user_pass列，输入你想要的密码并在函数下拉菜单中选择MD5 这个函数；</p>
+<p>step4：点击GO，就可以保存密码，然后重新登陆下WordPress试试。</p>
+<h3 id="办法2：通过functions-php-来重置密码"><a href="#办法2：通过functions-php-来重置密码" class="headerlink" title="办法2：通过functions.php 来重置密码"></a>办法2：通过functions.php 来重置密码</h3><p>上述办法还是有点技术含量的，如果没折腾过主机的朋友，估计会很纠结，不过通过functions.php 来重置稍微简单点了。</p>
+<p>step1：把现在使用的主题的functions.php 下载下来（ftp或者通过主机控制面板都可以）；</p>
+<p>step2：在functions.php 中添加代码，其中NewPassword是你想设置的新密码，1是你要重置密码的id号（一般情况下创始人的id为1）。</p>
+<p><code>wp_set_password(‘NewPassword’, 1);</code></p>
+<p>step3：保存该文件并上传到你当前使用的主题下面；</p>
+<p>step4：随便访问你WordPress任何一篇文章，然后尝试用新密码登录；</p>
+<p>step5：如果你能够登陆成功了，就把上述代码从functions.php移除保存并重新上传到当前主题目录下。</p>
+<p>OK，两种重置办法就讲到这里。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;你忘记密码通过找回密码页面发送重置密码页面的时候可能还会遇到接收不到邮件的情况。怎么办呢?垃圾邮件中也没有。。。怎么办？&lt;/p&gt;
+&lt;h3 id=&quot;办法1：通过phpMyAdmin来重置密码&quot;&gt;&lt;a href=&quot;#办法1：通过phpMyAdmin来重置密码&quot; class=&quot;h
+    
+    </summary>
+    
+      <category term="技术" scheme="http://i-fanr.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Wordpress" scheme="http://i-fanr.com/tags/Wordpress/"/>
+    
+  </entry>
   
   <entry>
     <title>设计十诫</title>
