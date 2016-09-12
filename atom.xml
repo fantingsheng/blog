@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://i-fanr.com/"/>
-  <updated>2016-08-08T06:25:20.000Z</updated>
+  <updated>2016-09-12T14:51:40.000Z</updated>
   <id>http://i-fanr.com/</id>
   
   <author>
@@ -14,6 +14,55 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>为网站增加https访问</title>
+    <link href="http://i-fanr.com/2016/09/12/site-https/"/>
+    <id>http://i-fanr.com/2016/09/12/site-https/</id>
+    <published>2016-09-12T06:20:25.000Z</published>
+    <updated>2016-09-12T14:51:40.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>首先购买https服务，生成crt和key文件，nginx配置如下<br><code><br>server {<br>        listen       443;<br>        server_name www.i-fanr.com;<br>        index index.html index.htm index.php;<br>        root /usr/share/nginx/www.i-fanr.com;<br>        add_header Access-Control-Allow-Origin *;</code></p>
+<pre><code>ssl on;
+ssl_certificate /etc/nginx/ssl/www.i-fanr.com.crt;
+ssl_certificate_key /etc/nginx/ssl/www.i-fanr.com.key;
+ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+ssl_prefer_server_ciphers on;
+ssl_ciphers EECDH+CHACHA20:EECDH+AES128:RSA+AES128:EECDH+AES256:RSA+AES256:EECDH+3DES:RSA+3DES:!MD5;
+
+if ($host = &apos;i-fanr.com&apos;) {
+        rewrite ^/(.*) https://www.i-fanr.com/$1 permanent;
+}
+
+if ($request_filename !~ (ico|js|css|img|fonts|downloads|helps|robots\.txt|index\.php)) {
+        rewrite ^/(.*)$ /index.php/$1 last;
+        break;
+}
+
+location ~ \.php {
+        root /usr/share/nginx/www.i-fanr.com;
+        fastcgi_pass   127.0.0.1:9000;
+        fastcgi_index  index.php;
+        set $path_info &quot;&quot;;
+        set $real_script_name $fastcgi_script_name;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include        fastcgi_params;
+}
+</code></pre><p>}<br></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;首先购买https服务，生成crt和key文件，nginx配置如下&lt;br&gt;&lt;code&gt;&lt;br&gt;server {&lt;br&gt;        listen       443;&lt;br&gt;        server_name www.i-fanr.com;&lt;br&gt;        in
+    
+    </summary>
+    
+      <category term="技术" scheme="http://i-fanr.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="HTTPS" scheme="http://i-fanr.com/tags/HTTPS/"/>
+    
+  </entry>
   
   <entry>
     <title>WordPress用户密码忘记且无法重置的解决办法</title>
