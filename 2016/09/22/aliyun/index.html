@@ -31,7 +31,7 @@
 修复方案：
 在文件的2890行附近的 $plugin = urldecode( $_POST[‘plugin’] );
 后面加上 $plugin = plugin_basename( saniti">
-<meta property="og:updated_time" content="2016-09-22T03:43:06.000Z">
+<meta property="og:updated_time" content="2016-09-22T03:50:33.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="阿里云主机wordpress漏洞官方修复方案汇总">
 <meta name="twitter:description" content="阿里云主机wordpress漏洞官方修复方案汇总
@@ -211,9 +211,15 @@
 <p>文件位置：/wp-includes/http.php</p>
 <p>修复方案：</p>
 <p>在文件的465行附近的 $same_host = strtolower( $parsed_home[‘host’] ) === strtolower( $parsed_url[‘host’] );</p>
-<p>改成 if ( isset( $parsed_home[‘host’] ) ) { $same_host = ( strtolower( $parsed_home[‘host’] ) === strtolower( $parsed_url[‘host’] ) || ‘localhost’ === strtolower( $parsed_url[‘host’] ) ); } else { $same_host = false; } ;</p>
+<p>改成 </p>
+<blockquote>
+<p>if ( isset( $parsed_home[‘host’] ) ) { $same_host = ( strtolower( $parsed_home[‘host’] ) === strtolower( $parsed_url[‘host’] ) || ‘localhost’ === strtolower( $parsed_url[‘host’] ) ); } else { $same_host = false; } ;</p>
+</blockquote>
 <p>在文件的 478行附件的 if ( 127 === $parts[0] || 10 === $parts[0] || 0 === $parts[0]</p>
-<p>改成 if ( 127 === $parts[0] || 10 === $parts[0] || 0 === $parts[0]  || 0 === $parts[0]</p>
+<p>改成 </p>
+<blockquote>
+<p>if ( 127 === $parts[0] || 10 === $parts[0] || 0 === $parts[0]  || 0 === $parts[0]</p>
+</blockquote>
 
     
   </div>
