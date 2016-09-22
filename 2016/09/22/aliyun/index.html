@@ -20,7 +20,9 @@
 文件位置：/wp-admin/includes/ajax-actions.php
 修复方案：
 在文件的2890行附近的 $plugin = urldecode( $_POST[‘plugin’] );
-后面加上 $plugin = plugin_basename( saniti">
+后面加上 
+
+$plugin = plugin_basename( sani">
 <meta property="og:type" content="article">
 <meta property="og:title" content="阿里云主机wordpress漏洞官方修复方案汇总">
 <meta property="og:url" content="http://i-fanr.com/2016/09/22/aliyun/index.html">
@@ -30,8 +32,10 @@
 文件位置：/wp-admin/includes/ajax-actions.php
 修复方案：
 在文件的2890行附近的 $plugin = urldecode( $_POST[‘plugin’] );
-后面加上 $plugin = plugin_basename( saniti">
-<meta property="og:updated_time" content="2016-09-22T03:50:33.000Z">
+后面加上 
+
+$plugin = plugin_basename( sani">
+<meta property="og:updated_time" content="2016-09-22T03:51:52.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="阿里云主机wordpress漏洞官方修复方案汇总">
 <meta name="twitter:description" content="阿里云主机wordpress漏洞官方修复方案汇总
@@ -39,7 +43,9 @@
 文件位置：/wp-admin/includes/ajax-actions.php
 修复方案：
 在文件的2890行附近的 $plugin = urldecode( $_POST[‘plugin’] );
-后面加上 $plugin = plugin_basename( saniti">
+后面加上 
+
+$plugin = plugin_basename( sani">
 
   
     <link rel="alternate" href="/atom.xml" title="Write more, Think more" type="application/atom+xml">
@@ -206,16 +212,25 @@
 <p>文件位置：/wp-admin/includes/ajax-actions.php</p>
 <p>修复方案：</p>
 <p>在文件的2890行附近的 $plugin = urldecode( $_POST[‘plugin’] );</p>
-<p>后面加上 $plugin = plugin_basename( sanitize_text_field( wp_unslash( $_POST[‘plugin’] ) ) );</p>
+<p>后面加上 </p>
+<blockquote>
+<p>$plugin = plugin_basename( sanitize_text_field( wp_unslash( $_POST[‘plugin’] ) ) );</p>
+</blockquote>
 <p>漏洞描述：wordpress IP验证不当漏洞</p>
 <p>文件位置：/wp-includes/http.php</p>
 <p>修复方案：</p>
-<p>在文件的465行附近的 $same_host = strtolower( $parsed_home[‘host’] ) === strtolower( $parsed_url[‘host’] );</p>
+<p>在文件的465行附近的 </p>
+<blockquote>
+<p>$same_host = strtolower( $parsed_home[‘host’] ) === strtolower( $parsed_url[‘host’] );</p>
+</blockquote>
 <p>改成 </p>
 <blockquote>
 <p>if ( isset( $parsed_home[‘host’] ) ) { $same_host = ( strtolower( $parsed_home[‘host’] ) === strtolower( $parsed_url[‘host’] ) || ‘localhost’ === strtolower( $parsed_url[‘host’] ) ); } else { $same_host = false; } ;</p>
 </blockquote>
-<p>在文件的 478行附件的 if ( 127 === $parts[0] || 10 === $parts[0] || 0 === $parts[0]</p>
+<p>在文件的 478行附件的 </p>
+<blockquote>
+<p>if ( 127 === $parts[0] || 10 === $parts[0] || 0 === $parts[0]</p>
+</blockquote>
 <p>改成 </p>
 <blockquote>
 <p>if ( 127 === $parts[0] || 10 === $parts[0] || 0 === $parts[0]  || 0 === $parts[0]</p>
