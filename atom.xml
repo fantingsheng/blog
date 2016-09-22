@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://i-fanr.com/"/>
-  <updated>2016-09-12T14:51:40.000Z</updated>
+  <updated>2016-09-22T03:35:32.000Z</updated>
   <id>http://i-fanr.com/</id>
   
   <author>
@@ -14,6 +14,43 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>阿里云主机wordpress漏洞官方修复方案汇总</title>
+    <link href="http://i-fanr.com/2016/09/22/aliyun/"/>
+    <id>http://i-fanr.com/2016/09/22/aliyun/</id>
+    <published>2016-09-22T03:32:59.000Z</published>
+    <updated>2016-09-22T03:35:32.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>不知所云<br>阿里云主机wordpress漏洞官方修复方案汇总</p>
+<p>5 天 前 | MAGICSKY0 |<br>漏洞描述：wordpress后台插件更新模块任意目录遍历导致DOS漏洞</p>
+<p>文件位置：/wp-admin/includes/ajax-actions.php</p>
+<p>修复方案：</p>
+<p>在文件的2890行附近的 $plugin = urldecode( $_POST[‘plugin’] );</p>
+<p>后面加上 $plugin = plugin_basename( sanitize_text_field( wp_unslash( $_POST[‘plugin’] ) ) );</p>
+<p>漏洞描述：wordpress IP验证不当漏洞</p>
+<p>文件位置：/wp-includes/http.php</p>
+<p>修复方案：</p>
+<p>在文件的465行附近的 $same_host = strtolower( $parsed_home[‘host’] ) === strtolower( $parsed_url[‘host’] );</p>
+<p>改成 if ( isset( $parsed_home[‘host’] ) ) { $same_host = ( strtolower( $parsed_home[‘host’] ) === strtolower( $parsed_url[‘host’] ) || ‘localhost’ === strtolower( $parsed_url[‘host’] ) ); } else { $same_host = false; } ;</p>
+<p>在文件的 478行附件的 if ( 127 === $parts[0] || 10 === $parts[0] || 0 === $parts[0]</p>
+<p>改成 if ( 127 === $parts[0] || 10 === $parts[0] || 0 === $parts[0]  || 0 === $parts[0]</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;不知所云&lt;br&gt;阿里云主机wordpress漏洞官方修复方案汇总&lt;/p&gt;
+&lt;p&gt;5 天 前 | MAGICSKY0 |&lt;br&gt;漏洞描述：wordpress后台插件更新模块任意目录遍历导致DOS漏洞&lt;/p&gt;
+&lt;p&gt;文件位置：/wp-admin/includes/ajax-ac
+    
+    </summary>
+    
+      <category term="漏洞" scheme="http://i-fanr.com/categories/%E6%BC%8F%E6%B4%9E/"/>
+    
+    
+      <category term="技术" scheme="http://i-fanr.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>为网站增加https访问</title>
