@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://i-fanr.com/"/>
-  <updated>2016-09-22T03:58:54.000Z</updated>
+  <updated>2016-10-16T09:21:06.000Z</updated>
   <id>http://i-fanr.com/</id>
   
   <author>
@@ -14,6 +14,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>与技术大咖的交流</title>
+    <link href="http://i-fanr.com/2016/10/16/think-twice/"/>
+    <id>http://i-fanr.com/2016/10/16/think-twice/</id>
+    <published>2016-10-16T09:16:51.000Z</published>
+    <updated>2016-10-16T09:21:06.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天和平哥交流讨论了两个方法论：</p>
+<blockquote>
+<p>1.任务拆解；<br>2.三个为什么。</p>
+</blockquote>
+<p>以前总觉得方法论是成功人士总结自己如何取得成功的经验，从来没觉得跟自己有什么关系，做事按着自己的想法和节奏来就行了。但是回过头来想想，如何取得成功并非偶然，前人踩过的坑，你其实可以避免再踩一遍。其实每个人都需要自己的方法论，做事不是无章法的，想怎么来就怎么来！</p>
+<p>其实开始也觉得做事之前为什么要任务拆解，是嫌蛋糕太大了，要小口小口地吃。为什么要浪费时间在这无用功上面？当你这样想的时候，你应该问自己几个为什么？为什么自己不那么去做，这样做有什么好处？问的自己无从说起的时候，可能就是你看到事物本质的时候。</p>
+<p>我们看东西的时候总是难免太片面，当一个很大很复杂的事物放在你的面前，更容易看不清看不全，所以把任务做拆解，分成不同的小块，这样我们就很容易把握住这件事的方方面面。在任务的拆解过程，你的思维会更细致，捕捉到每一个点。长久下来，形成你自己的一套思维模式。而三个为什么就是不断认知的过程，成长也就是不断总结经验，形成自己的方法论。</p>
+<p>另外我们也讨论了心目中的大牛是什么样的，以前按自己的思维定式大牛就是精通所有的语言，任何一个技术上的概念随手拈来。而今天我得到了一个答案，大牛——能构建自己的世界的人。无疑这是个很酷的答案！万里之行始于足下，不忘初心，走过了那条路，世界就是你的！<br>感谢平哥的交流分享，很享受这样的过程！</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天和平哥交流讨论了两个方法论：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1.任务拆解；&lt;br&gt;2.三个为什么。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;以前总觉得方法论是成功人士总结自己如何取得成功的经验，从来没觉得跟自己有什么关系，做事按着自己的想法和节奏来就行了。但
+    
+    </summary>
+    
+      <category term="生活感悟" scheme="http://i-fanr.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
+    
+    
+      <category term="交流,分享" scheme="http://i-fanr.com/tags/%E4%BA%A4%E6%B5%81-%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
   
   <entry>
     <title>阿里云主机wordpress漏洞官方修复方案汇总</title>
