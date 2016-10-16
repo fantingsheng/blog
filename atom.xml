@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://i-fanr.com/"/>
-  <updated>2016-10-16T09:21:06.000Z</updated>
+  <updated>2016-10-16T10:05:35.000Z</updated>
   <id>http://i-fanr.com/</id>
   
   <author>
@@ -14,6 +14,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>技术人的业余项目(side project)</title>
+    <link href="http://i-fanr.com/2016/10/16/side-project/"/>
+    <id>http://i-fanr.com/2016/10/16/side-project/</id>
+    <published>2016-10-16T09:25:19.000Z</published>
+    <updated>2016-10-16T10:05:35.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>作为一个上班族，拿着固定的工资，每天朝九晚五，虽然嘴里一万个不愿意，但是还得坚持着。想弄点业余项目赚点外快，可又不知从哪开始？</p>
+<p>技术出身靠技术吃饭，可以去猪八戒网上接点项目，前端可以装修装修淘宝天猫店铺，做出点wordpress收费主题，插件等等，时下微信很火，带来一系列的应用开发，这些都是你的发挥场所，有技术不怕没饭吃。</p>
+<p>从15年初接触微信开发，用的是开源的微擎程序，做的是前端开发，接触点PHP，上手也还算快，微擎作为微信开发的程序，设计的很不错，封装了很多微信的功能，避免了很多代码实现的功能，封装成函数，变量，直接拿来就用，很爽！现在微擎已经积累了很多的用户和开发者，形成了不错的氛围，论坛上也很活跃，开发者和运营者相互信任交流。得益于微擎开发团队的用心，商城的模块实行收费，开放给开发者去上面发布模块，模式很像淘宝。做平台很不易，做好更难，但最终获益确是丰厚的。</p>
+<p>跟随着微擎一起走过的快两年，也经历了从初级开发者到中级开发者，发布了十几款应用，下载量也在三四百，有两款应用收费在一千以上，下载量也均在六七十，作为自己的业余Side Project，也还算成功。更重要的是结识了一些很好的伙伴，有运营公众号的，也有很厉害的开发者，成功的合作是要达到了互利，共赢。</p>
+<p>晒下提现记录，只是部分</p>
+<p><img src="/images/qianlist.png"></p>
+<p>充分利用业余时间做点项目，既获得收入，学到东西，还能结交朋友👬</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;作为一个上班族，拿着固定的工资，每天朝九晚五，虽然嘴里一万个不愿意，但是还得坚持着。想弄点业余项目赚点外快，可又不知从哪开始？&lt;/p&gt;
+&lt;p&gt;技术出身靠技术吃饭，可以去猪八戒网上接点项目，前端可以装修装修淘宝天猫店铺，做出点wordpress收费主题，插件等等，时下微信很火
+    
+    </summary>
+    
+      <category term="生活感悟" scheme="http://i-fanr.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
+    
+    
+      <category term="业余项目" scheme="http://i-fanr.com/tags/%E4%B8%9A%E4%BD%99%E9%A1%B9%E7%9B%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>与技术大咖的交流</title>
@@ -54,7 +84,7 @@
     <link href="http://i-fanr.com/2016/09/22/aliyun/"/>
     <id>http://i-fanr.com/2016/09/22/aliyun/</id>
     <published>2016-09-22T03:32:59.000Z</published>
-    <updated>2016-09-22T03:58:54.000Z</updated>
+    <updated>2016-10-16T09:33:26.000Z</updated>
     
     <content type="html"><![CDATA[<p>阿里云主机wordpress漏洞官方修复方案汇总</p>
 <p>漏洞描述：wordpress后台插件更新模块任意目录遍历导致DOS漏洞</p>
@@ -96,10 +126,10 @@
     
     </summary>
     
-      <category term="漏洞" scheme="http://i-fanr.com/categories/%E6%BC%8F%E6%B4%9E/"/>
+      <category term="技术" scheme="http://i-fanr.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="技术" scheme="http://i-fanr.com/tags/%E6%8A%80%E6%9C%AF/"/>
+      <category term="漏洞" scheme="http://i-fanr.com/tags/%E6%BC%8F%E6%B4%9E/"/>
     
   </entry>
   
@@ -193,7 +223,7 @@ location ~ \.php {
     <link href="http://i-fanr.com/2016/07/23/design-way/"/>
     <id>http://i-fanr.com/2016/07/23/design-way/</id>
     <published>2016-07-23T09:10:33.000Z</published>
-    <updated>2016-07-23T09:52:18.000Z</updated>
+    <updated>2016-10-16T09:32:42.000Z</updated>
     
     <content type="html"><![CDATA[<p>好的设计是创新的 (Good design is innovative)</p>
 <p>好的设计是实用的 (Good design makes a product useful)</p>
@@ -216,7 +246,7 @@ location ~ \.php {
     
     </summary>
     
-      <category term="设计,极简" scheme="http://i-fanr.com/categories/%E8%AE%BE%E8%AE%A1-%E6%9E%81%E7%AE%80/"/>
+      <category term="设计" scheme="http://i-fanr.com/categories/%E8%AE%BE%E8%AE%A1/"/>
     
     
       <category term="设计" scheme="http://i-fanr.com/tags/%E8%AE%BE%E8%AE%A1/"/>
@@ -228,7 +258,7 @@ location ~ \.php {
     <link href="http://i-fanr.com/2016/07/01/web-dev-trend/"/>
     <id>http://i-fanr.com/2016/07/01/web-dev-trend/</id>
     <published>2016-07-01T12:10:33.000Z</published>
-    <updated>2016-07-23T09:51:50.000Z</updated>
+    <updated>2016-10-16T09:33:02.000Z</updated>
     
     <content type="html"><![CDATA[<p>随着2016年的到来，许多新的设计趋势都渐渐掀开了它们神秘的面纱。网页设计领域总是在不断地变化，新的工具、工作流程、有助于开发的有用布局层出不穷。</p>
 <p>我们很难精确预测什么潮流会引导新一年的风向。而且近期的历史现象表明趋势会像野火一样燎原。我总结一些2015年独特的，有可能持续到2016年的发展趋势。</p>
@@ -278,7 +308,7 @@ location ~ \.php {
     
     </summary>
     
-      <category term="前端" scheme="http://i-fanr.com/categories/%E5%89%8D%E7%AB%AF/"/>
+      <category term="技术" scheme="http://i-fanr.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
       <category term="前端设计" scheme="http://i-fanr.com/tags/%E5%89%8D%E7%AB%AF%E8%AE%BE%E8%AE%A1/"/>

@@ -1,57 +1,29 @@
 <!DOCTYPE html>
 
 
-  <html class="light page-post">
+  <html class="light page-categories设计">
 
 
 <head>
   <meta charset="utf-8">
   
-  <title>阿里云主机wordpress漏洞官方修复方案汇总 | Write more, Think more</title>
+  <title>Category: 设计 | Write more, Think more</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="漏洞," />
+    <meta name="keywords" content="前端,设计,前端开发,用户体验,设计,frontend,design,nodejs,JavaScript" />
   
 
-  <meta name="description" content="阿里云主机wordpress漏洞官方修复方案汇总
-漏洞描述：wordpress后台插件更新模块任意目录遍历导致DOS漏洞
-文件位置：/wp-admin/includes/ajax-actions.php
-修复方案：在文件的2890行附近的 
-
-$plugin = urldecode( $_POST[‘plugin’] );
-
-后面加上 
-
-$plugin = plugin_basename( sa">
-<meta property="og:type" content="article">
-<meta property="og:title" content="阿里云主机wordpress漏洞官方修复方案汇总">
-<meta property="og:url" content="http://i-fanr.com/2016/09/22/aliyun/index.html">
+  <meta name="description" content="Writing is the best teacher of Thinker">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Write more, Think more">
+<meta property="og:url" content="http://i-fanr.com/categories/设计/index.html">
 <meta property="og:site_name" content="Write more, Think more">
-<meta property="og:description" content="阿里云主机wordpress漏洞官方修复方案汇总
-漏洞描述：wordpress后台插件更新模块任意目录遍历导致DOS漏洞
-文件位置：/wp-admin/includes/ajax-actions.php
-修复方案：在文件的2890行附近的 
-
-$plugin = urldecode( $_POST[‘plugin’] );
-
-后面加上 
-
-$plugin = plugin_basename( sa">
-<meta property="og:updated_time" content="2016-10-16T09:33:26.000Z">
+<meta property="og:description" content="Writing is the best teacher of Thinker">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="阿里云主机wordpress漏洞官方修复方案汇总">
-<meta name="twitter:description" content="阿里云主机wordpress漏洞官方修复方案汇总
-漏洞描述：wordpress后台插件更新模块任意目录遍历导致DOS漏洞
-文件位置：/wp-admin/includes/ajax-actions.php
-修复方案：在文件的2890行附近的 
-
-$plugin = urldecode( $_POST[‘plugin’] );
-
-后面加上 
-
-$plugin = plugin_basename( sa">
+<meta name="twitter:title" content="Write more, Think more">
+<meta name="twitter:description" content="Writing is the best teacher of Thinker">
 
   
     <link rel="alternate" href="/atom.xml" title="Write more, Think more" type="application/atom+xml">
@@ -91,8 +63,17 @@ $plugin = plugin_basename( sa">
     <span id="toolbox-mobile" class="toolbox-mobile">首页</span>
   
 
-  <div class="post-header CENTER">
-   
+  <div class="content content-category">
+  <div class="page-header">
+
+  
+    <div class="breadcrumb">
+      <div class="location">分类</div>
+      <i class="icon-location"></i>
+    </div>
+  
+
+  
   <div class="toolbox">
     <a class="toolbox-entry" href="/">
       <span class="toolbox-entry-text">首页</span>
@@ -175,107 +156,126 @@ $plugin = plugin_basename( sa">
   </div>
 
 
-</div>
 
-
-
-
-<div class="content content-post CENTER">
-   <article id="post-aliyun" class="article article-type-post" itemprop="blogPost">
-  <header class="article-header">
-    <h1 class="post-title">阿里云主机wordpress漏洞官方修复方案汇总</h1>
-
-    <div class="article-meta">
-      <span>
-        <i class="icon-calendar"></i>
-        <span>2016.09.22</span>
-      </span>
-
-      
-        <span class="article-author">
-          <i class="icon-user"></i>
-          <span>Timfan</span>
-        </span>
-      
-
-      
-  <span class="article-category">
-    <i class="icon-list"></i>
-    <a class="article-category-link" href="/categories/技术/">技术</a>
-  </span>
-
-
-
-      
-
-    </div>
-  </header>
-
-  <div class="article-content">
-    
-      <p>阿里云主机wordpress漏洞官方修复方案汇总</p>
-<p>漏洞描述：wordpress后台插件更新模块任意目录遍历导致DOS漏洞</p>
-<p>文件位置：/wp-admin/includes/ajax-actions.php</p>
-<p>修复方案：在文件的2890行附近的 </p>
-<blockquote>
-<p>$plugin = urldecode( $_POST[‘plugin’] );</p>
-</blockquote>
-<p>后面加上 </p>
-<blockquote>
-<p>$plugin = plugin_basename( sanitize_text_field( wp_unslash( $_POST[‘plugin’] ) ) );</p>
-</blockquote>
-<p>漏洞描述：wordpress IP验证不当漏洞</p>
-<p>文件位置：/wp-includes/http.php</p>
-<p>修复方案：在文件的465行附近的 </p>
-<blockquote>
-<p>$same_host = strtolower( $parsed_home[‘host’] ) === strtolower( $parsed_url[‘host’] );</p>
-</blockquote>
-<p>改成 </p>
-<blockquote>
-<p>if ( isset( $parsed_home[‘host’] ) ) { $same_host = ( strtolower( $parsed_home[‘host’] ) === strtolower( $parsed_url[‘host’] ) || ‘localhost’ === strtolower( $parsed_url[‘host’] ) ); } else { $same_host = false; } ;</p>
-</blockquote>
-<p>在文件的 478行附件的 </p>
-<blockquote>
-<p>if ( 127 === $parts[0] || 10 === $parts[0] || 0 === $parts[0]</p>
-</blockquote>
-<p>改成 </p>
-<blockquote>
-<p>if ( 127 === $parts[0] || 10 === $parts[0] || 0 === $parts[0]  || 0 === $parts[0]</p>
-</blockquote>
-
-    
-  </div>
-</article>
-
-</div>
-
-
-  <div class="text-center donation">
-    <div class="inner-donation">
-      <span class="btn-donation">支持一下</span>
-      <div class="donation-body">
-        <div class="tip text-center">扫一扫，支持Timfan</div>
-        <ul class="theme.donation.items.length">
-        
-          <li class="item">
-            <img src="/images/qr-wechat.png" alt="">
-          </li>
-        
-          <li class="item">
-            <img src="/images/qr-alipay.jpg" alt="">
-          </li>
-        
-        </ul>
+  <div class="box-blog-info">
+    <a class="avatar" href="/">
+      <img src="/images/avatar.jpg" alt="" />
+    </a>
+    <div class="info">
+      <h3 class="name" style="font-family: calligraffittiregular">
+        Timfan
+      </h3>
+      <div class="slogan">
+        You are more than what you have become
       </div>
     </div>
   </div>
 
+</div>
 
+  <section class="category-box">
+  <div class="category-title">分类</div>
+  <div class="category-list">
+    
+      <a class="category-item" href="#技术">
+        <span class="category-name">技术</span>
+        <span class="category-size">( 4 )</span>
+      </a>
+    
+      <a class="category-item" href="#生活感悟">
+        <span class="category-name">生活感悟</span>
+        <span class="category-size">( 2 )</span>
+      </a>
+    
+      <a class="category-item" href="#设计">
+        <span class="category-name">设计</span>
+        <span class="category-size">( 1 )</span>
+      </a>
+    
+  </div>
+</section>
+
+  <ul class="list-post"><li id="技术" class="item-category-name item-title item-title-0">
+  <!--
+    <a href="" class="text-year">
+   -->
+    技术
+    <span class="category-count">( 4 )</span>
+  <!--
+  </a>
+   -->
+</li>
+<li class="item-post item">
+  <span class="post-date">09-22</span>
+
+  <a class="post-title" href="/2016/09/22/aliyun/">阿里云主机wordpress漏洞官方修复方案汇总</a>
+
+</li>
+<li class="item-post item">
+  <span class="post-date">09-12</span>
+
+  <a class="post-title" href="/2016/09/12/site-https/">为网站增加https访问</a>
+
+</li>
+<li class="item-post item">
+  <span class="post-date">07-01</span>
+
+  <a class="post-title" href="/2016/07/01/web-dev-trend/">2016年Web前端设计的10大趋势</a>
+
+</li>
+<li class="item-post item">
+  <span class="post-date">08-08</span>
+
+  <a class="post-title" href="/2016/08/08/wp-change-pass/">WordPress用户密码忘记且无法重置的解决办法</a>
+
+</li>
+<li id="生活感悟" class="item-category-name item-title item-title-1">
+  <!--
+    <a href="" class="text-year">
+   -->
+    生活感悟
+    <span class="category-count">( 2 )</span>
+  <!--
+  </a>
+   -->
+</li>
+<li class="item-post item">
+  <span class="post-date">10-16</span>
+
+  <a class="post-title" href="/2016/10/16/side-project/">技术人的业余项目(side project)</a>
+
+</li>
+<li class="item-post item">
+  <span class="post-date">10-16</span>
+
+  <a class="post-title" href="/2016/10/16/think-twice/">与技术大咖的交流</a>
+
+</li>
+<li id="设计" class="item-category-name item-title item-title-2">
+  <!--
+    <a href="" class="text-year">
+   -->
+    设计
+    <span class="category-count">( 1 )</span>
+  <!--
+  </a>
+   -->
+</li>
+<li class="item-post item">
+  <span class="post-date">07-23</span>
+
+  <a class="post-title" href="/2016/07/23/design-way/">设计十诫</a>
+
+</li>
+</ul>
+</div>
 
 
   <a id="backTop" class="back-top">
     <i class="icon-angle-up"></i>
   </a>
+
+
 
 
 
@@ -367,35 +367,6 @@ $plugin = plugin_basename( sa">
 </div>
 
 
-
-  
-      <div class="fexo-comments comments-post">
-    
-
-    
-  <section class="duoshuo-comments">
-    <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="" data-title="阿里云主机wordpress漏洞官方修复方案汇总" data-url="http://i-fanr.com/2016/09/22/aliyun/index.html"></div>
-    <!-- 多说评论框 end -->
-  </section>
-
-
-
-
-  <script type="text/javascript">
-  var duoshuoQuery = {short_name:"fants"};
-  (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';ds.async = true;
-    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0]
-     || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
-  </script>
-
-
-  </div>
 
   
 
