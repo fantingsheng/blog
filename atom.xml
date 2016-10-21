@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://i-fanr.com/"/>
-  <updated>2016-10-21T09:06:01.000Z</updated>
+  <updated>2016-10-21T08:59:36.000Z</updated>
   <id>http://i-fanr.com/</id>
   
   <author>
@@ -14,41 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>设计十诫</title>
-    <link href="http://i-fanr.com/2016/12/23/design-way/"/>
-    <id>http://i-fanr.com/2016/12/23/design-way/</id>
-    <published>2016-12-23T09:10:33.000Z</published>
-    <updated>2016-10-21T09:06:01.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>好的设计是创新的 (Good design is innovative)</p>
-<p>好的设计是实用的 (Good design makes a product useful)</p>
-<p>好的设计是唯美的 (Good design is aesthetic)</p>
-<p>好的设计让产品易于理解 (Good design helps a product to be understood)</p>
-<p>好的设计是谦虚的 (Good design is unobtrusive)</p>
-<p>好的设计是诚实的 (Good design is honest)</p>
-<p>好的设计坚固耐用 (Good design is durable)</p>
-<p>好的设计执着细节 (Good design is thorough to the last detail)</p>
-<p>好的设计是环保的 (Good design is concerned with the environment)</p>
-<p>好的设计是极简的 (Good design is as little design as possible)</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;好的设计是创新的 (Good design is innovative)&lt;/p&gt;
-&lt;p&gt;好的设计是实用的 (Good design makes a product useful)&lt;/p&gt;
-&lt;p&gt;好的设计是唯美的 (Good design is aesthetic)&lt;/p&gt;
-
-    
-    </summary>
-    
-      <category term="设计" scheme="http://i-fanr.com/categories/%E8%AE%BE%E8%AE%A1/"/>
-    
-    
-      <category term="设计" scheme="http://i-fanr.com/tags/%E8%AE%BE%E8%AE%A1/"/>
-    
-  </entry>
   
   <entry>
     <title>内向型人与外向型人</title>
@@ -281,6 +246,41 @@ location ~ \.php {
     
     
       <category term="Wordpress" scheme="http://i-fanr.com/tags/Wordpress/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>设计十诫</title>
+    <link href="http://i-fanr.com/2015/12/23/design-way/"/>
+    <id>http://i-fanr.com/2015/12/23/design-way/</id>
+    <published>2015-12-23T09:10:33.000Z</published>
+    <updated>2016-10-21T09:07:15.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>好的设计是创新的 (Good design is innovative)</p>
+<p>好的设计是实用的 (Good design makes a product useful)</p>
+<p>好的设计是唯美的 (Good design is aesthetic)</p>
+<p>好的设计让产品易于理解 (Good design helps a product to be understood)</p>
+<p>好的设计是谦虚的 (Good design is unobtrusive)</p>
+<p>好的设计是诚实的 (Good design is honest)</p>
+<p>好的设计坚固耐用 (Good design is durable)</p>
+<p>好的设计执着细节 (Good design is thorough to the last detail)</p>
+<p>好的设计是环保的 (Good design is concerned with the environment)</p>
+<p>好的设计是极简的 (Good design is as little design as possible)</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;好的设计是创新的 (Good design is innovative)&lt;/p&gt;
+&lt;p&gt;好的设计是实用的 (Good design makes a product useful)&lt;/p&gt;
+&lt;p&gt;好的设计是唯美的 (Good design is aesthetic)&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="设计" scheme="http://i-fanr.com/categories/%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+      <category term="设计" scheme="http://i-fanr.com/tags/%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
