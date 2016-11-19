@@ -195,91 +195,6 @@
   </entry>
   
   <entry>
-    <title>为网站增加https访问</title>
-    <link href="http://i-fanr.com/2016/09/12/site-https/"/>
-    <id>http://i-fanr.com/2016/09/12/site-https/</id>
-    <published>2016-09-12T06:20:25.000Z</published>
-    <updated>2016-09-12T14:51:40.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>首先购买https服务，生成crt和key文件，nginx配置如下<br><code><br>server {<br>        listen       443;<br>        server_name www.i-fanr.com;<br>        index index.html index.htm index.php;<br>        root /usr/share/nginx/www.i-fanr.com;<br>        add_header Access-Control-Allow-Origin *;</code></p>
-<pre><code>ssl on;
-ssl_certificate /etc/nginx/ssl/www.i-fanr.com.crt;
-ssl_certificate_key /etc/nginx/ssl/www.i-fanr.com.key;
-ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
-ssl_prefer_server_ciphers on;
-ssl_ciphers EECDH+CHACHA20:EECDH+AES128:RSA+AES128:EECDH+AES256:RSA+AES256:EECDH+3DES:RSA+3DES:!MD5;
-
-if ($host = &apos;i-fanr.com&apos;) {
-        rewrite ^/(.*) https://www.i-fanr.com/$1 permanent;
-}
-
-if ($request_filename !~ (ico|js|css|img|fonts|downloads|helps|robots\.txt|index\.php)) {
-        rewrite ^/(.*)$ /index.php/$1 last;
-        break;
-}
-
-location ~ \.php {
-        root /usr/share/nginx/www.i-fanr.com;
-        fastcgi_pass   127.0.0.1:9000;
-        fastcgi_index  index.php;
-        set $path_info &quot;&quot;;
-        set $real_script_name $fastcgi_script_name;
-        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
-        include        fastcgi_params;
-}
-</code></pre><p>}<br></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;首先购买https服务，生成crt和key文件，nginx配置如下&lt;br&gt;&lt;code&gt;&lt;br&gt;server {&lt;br&gt;        listen       443;&lt;br&gt;        server_name www.i-fanr.com;&lt;br&gt;        in
-    
-    </summary>
-    
-      <category term="技术" scheme="http://i-fanr.com/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="HTTPS" scheme="http://i-fanr.com/tags/HTTPS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>WordPress用户密码忘记且无法重置的解决办法</title>
-    <link href="http://i-fanr.com/2016/08/08/wp-change-pass/"/>
-    <id>http://i-fanr.com/2016/08/08/wp-change-pass/</id>
-    <published>2016-08-08T06:20:25.000Z</published>
-    <updated>2016-08-08T06:25:20.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>你忘记密码通过找回密码页面发送重置密码页面的时候可能还会遇到接收不到邮件的情况。怎么办呢?垃圾邮件中也没有。。。怎么办？</p>
-<h3 id="办法1：通过phpMyAdmin来重置密码"><a href="#办法1：通过phpMyAdmin来重置密码" class="headerlink" title="办法1：通过phpMyAdmin来重置密码"></a>办法1：通过phpMyAdmin来重置密码</h3><p>step1：通过cpanel或者DA等主机管理工具登陆到phpMyAdmin ，并选择自己使用的数据库；</p>
-<p>step2：打开wp_users 表（或者会带有前缀的，但表名以users结尾）；</p>
-<p>step3：找到自己的用户名并编辑user_pass列，输入你想要的密码并在函数下拉菜单中选择MD5 这个函数；</p>
-<p>step4：点击GO，就可以保存密码，然后重新登陆下WordPress试试。</p>
-<h3 id="办法2：通过functions-php-来重置密码"><a href="#办法2：通过functions-php-来重置密码" class="headerlink" title="办法2：通过functions.php 来重置密码"></a>办法2：通过functions.php 来重置密码</h3><p>上述办法还是有点技术含量的，如果没折腾过主机的朋友，估计会很纠结，不过通过functions.php 来重置稍微简单点了。</p>
-<p>step1：把现在使用的主题的functions.php 下载下来（ftp或者通过主机控制面板都可以）；</p>
-<p>step2：在functions.php 中添加代码，其中NewPassword是你想设置的新密码，1是你要重置密码的id号（一般情况下创始人的id为1）。</p>
-<p><code>wp_set_password(‘NewPassword’, 1);</code></p>
-<p>step3：保存该文件并上传到你当前使用的主题下面；</p>
-<p>step4：随便访问你WordPress任何一篇文章，然后尝试用新密码登录；</p>
-<p>step5：如果你能够登陆成功了，就把上述代码从functions.php移除保存并重新上传到当前主题目录下。</p>
-<p>OK，两种重置办法就讲到这里。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;你忘记密码通过找回密码页面发送重置密码页面的时候可能还会遇到接收不到邮件的情况。怎么办呢?垃圾邮件中也没有。。。怎么办？&lt;/p&gt;
-&lt;h3 id=&quot;办法1：通过phpMyAdmin来重置密码&quot;&gt;&lt;a href=&quot;#办法1：通过phpMyAdmin来重置密码&quot; class=&quot;h
-    
-    </summary>
-    
-      <category term="技术" scheme="http://i-fanr.com/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="Wordpress" scheme="http://i-fanr.com/tags/Wordpress/"/>
-    
-  </entry>
-  
-  <entry>
     <title>设计十诫</title>
     <link href="http://i-fanr.com/2015/12/23/design-way/"/>
     <id>http://i-fanr.com/2015/12/23/design-way/</id>
@@ -373,6 +288,91 @@ location ~ \.php {
     
     
       <category term="前端设计" scheme="http://i-fanr.com/tags/%E5%89%8D%E7%AB%AF%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>为网站增加https访问</title>
+    <link href="http://i-fanr.com/2014/09/12/site-https/"/>
+    <id>http://i-fanr.com/2014/09/12/site-https/</id>
+    <published>2014-09-12T06:20:25.000Z</published>
+    <updated>2016-11-19T09:11:28.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>首先购买https服务，生成crt和key文件，nginx配置如下<br><code><br>server {<br>        listen       443;<br>        server_name www.i-fanr.com;<br>        index index.html index.htm index.php;<br>        root /usr/share/nginx/www.i-fanr.com;<br>        add_header Access-Control-Allow-Origin *;</code></p>
+<pre><code>ssl on;
+ssl_certificate /etc/nginx/ssl/www.i-fanr.com.crt;
+ssl_certificate_key /etc/nginx/ssl/www.i-fanr.com.key;
+ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+ssl_prefer_server_ciphers on;
+ssl_ciphers EECDH+CHACHA20:EECDH+AES128:RSA+AES128:EECDH+AES256:RSA+AES256:EECDH+3DES:RSA+3DES:!MD5;
+
+if ($host = &apos;i-fanr.com&apos;) {
+        rewrite ^/(.*) https://www.i-fanr.com/$1 permanent;
+}
+
+if ($request_filename !~ (ico|js|css|img|fonts|downloads|helps|robots\.txt|index\.php)) {
+        rewrite ^/(.*)$ /index.php/$1 last;
+        break;
+}
+
+location ~ \.php {
+        root /usr/share/nginx/www.i-fanr.com;
+        fastcgi_pass   127.0.0.1:9000;
+        fastcgi_index  index.php;
+        set $path_info &quot;&quot;;
+        set $real_script_name $fastcgi_script_name;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include        fastcgi_params;
+}
+</code></pre><p>}<br></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;首先购买https服务，生成crt和key文件，nginx配置如下&lt;br&gt;&lt;code&gt;&lt;br&gt;server {&lt;br&gt;        listen       443;&lt;br&gt;        server_name www.i-fanr.com;&lt;br&gt;        in
+    
+    </summary>
+    
+      <category term="技术" scheme="http://i-fanr.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="HTTPS" scheme="http://i-fanr.com/tags/HTTPS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WordPress用户密码忘记且无法重置的解决办法</title>
+    <link href="http://i-fanr.com/2014/08/08/wp-change-pass/"/>
+    <id>http://i-fanr.com/2014/08/08/wp-change-pass/</id>
+    <published>2014-08-08T06:20:25.000Z</published>
+    <updated>2016-11-19T09:11:26.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>你忘记密码通过找回密码页面发送重置密码页面的时候可能还会遇到接收不到邮件的情况。怎么办呢?垃圾邮件中也没有。。。怎么办？</p>
+<h3 id="办法1：通过phpMyAdmin来重置密码"><a href="#办法1：通过phpMyAdmin来重置密码" class="headerlink" title="办法1：通过phpMyAdmin来重置密码"></a>办法1：通过phpMyAdmin来重置密码</h3><p>step1：通过cpanel或者DA等主机管理工具登陆到phpMyAdmin ，并选择自己使用的数据库；</p>
+<p>step2：打开wp_users 表（或者会带有前缀的，但表名以users结尾）；</p>
+<p>step3：找到自己的用户名并编辑user_pass列，输入你想要的密码并在函数下拉菜单中选择MD5 这个函数；</p>
+<p>step4：点击GO，就可以保存密码，然后重新登陆下WordPress试试。</p>
+<h3 id="办法2：通过functions-php-来重置密码"><a href="#办法2：通过functions-php-来重置密码" class="headerlink" title="办法2：通过functions.php 来重置密码"></a>办法2：通过functions.php 来重置密码</h3><p>上述办法还是有点技术含量的，如果没折腾过主机的朋友，估计会很纠结，不过通过functions.php 来重置稍微简单点了。</p>
+<p>step1：把现在使用的主题的functions.php 下载下来（ftp或者通过主机控制面板都可以）；</p>
+<p>step2：在functions.php 中添加代码，其中NewPassword是你想设置的新密码，1是你要重置密码的id号（一般情况下创始人的id为1）。</p>
+<p><code>wp_set_password(‘NewPassword’, 1);</code></p>
+<p>step3：保存该文件并上传到你当前使用的主题下面；</p>
+<p>step4：随便访问你WordPress任何一篇文章，然后尝试用新密码登录；</p>
+<p>step5：如果你能够登陆成功了，就把上述代码从functions.php移除保存并重新上传到当前主题目录下。</p>
+<p>OK，两种重置办法就讲到这里。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;你忘记密码通过找回密码页面发送重置密码页面的时候可能还会遇到接收不到邮件的情况。怎么办呢?垃圾邮件中也没有。。。怎么办？&lt;/p&gt;
+&lt;h3 id=&quot;办法1：通过phpMyAdmin来重置密码&quot;&gt;&lt;a href=&quot;#办法1：通过phpMyAdmin来重置密码&quot; class=&quot;h
+    
+    </summary>
+    
+      <category term="技术" scheme="http://i-fanr.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Wordpress" scheme="http://i-fanr.com/tags/Wordpress/"/>
     
   </entry>
   

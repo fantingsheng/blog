@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 
 
-  <html class="light page-post">
+  <html class="light page-archives201409">
 
 
 <head>
   <meta charset="utf-8">
   
-  <title>为网站增加https访问 | Write more, Think more</title>
+  <title>Archives: 2014/9 | Write more, Think more</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="HTTPS," />
+    <meta name="keywords" content="前端,设计,前端开发,用户体验,设计,frontend,design,nodejs,JavaScript" />
   
 
-  <meta name="description" content="首先购买https服务，生成crt和key文件，nginx配置如下server {        listen       443;        server_name www.i-fanr.com;        index index.html index.htm index.php;        root /usr/share/nginx/www.i-fanr.com;        a">
-<meta property="og:type" content="article">
-<meta property="og:title" content="为网站增加https访问">
-<meta property="og:url" content="http://i-fanr.com/2016/09/12/site-https/index.html">
+  <meta name="description" content="Writing is the best teacher of Thinker">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Write more, Think more">
+<meta property="og:url" content="http://i-fanr.com/archives/2014/09/index.html">
 <meta property="og:site_name" content="Write more, Think more">
-<meta property="og:description" content="首先购买https服务，生成crt和key文件，nginx配置如下server {        listen       443;        server_name www.i-fanr.com;        index index.html index.htm index.php;        root /usr/share/nginx/www.i-fanr.com;        a">
-<meta property="og:updated_time" content="2016-09-12T14:51:40.000Z">
+<meta property="og:description" content="Writing is the best teacher of Thinker">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="为网站增加https访问">
-<meta name="twitter:description" content="首先购买https服务，生成crt和key文件，nginx配置如下server {        listen       443;        server_name www.i-fanr.com;        index index.html index.htm index.php;        root /usr/share/nginx/www.i-fanr.com;        a">
+<meta name="twitter:title" content="Write more, Think more">
+<meta name="twitter:description" content="Writing is the best teacher of Thinker">
 
   
     <link rel="alternate" href="/atom.xml" title="Write more, Think more" type="application/atom+xml">
@@ -64,8 +63,17 @@
     <span id="toolbox-mobile" class="toolbox-mobile">首页</span>
   
 
-  <div class="post-header CENTER">
-   
+  <div class="content content-archive">
+  <div class="page-header">
+
+  
+    <div class="breadcrumb">
+      <div class="location">博客</div>
+      <i class="icon-location"></i>
+    </div>
+  
+
+  
   <div class="toolbox">
     <a class="toolbox-entry" href="/">
       <span class="toolbox-entry-text">首页</span>
@@ -148,105 +156,49 @@
   </div>
 
 
-</div>
 
-
-
-
-<div class="content content-post CENTER">
-   <article id="post-site-https" class="article article-type-post" itemprop="blogPost">
-  <header class="article-header">
-    <h1 class="post-title">为网站增加https访问</h1>
-
-    <div class="article-meta">
-      <span>
-        <i class="icon-calendar"></i>
-        <span>2016.09.12</span>
-      </span>
-
-      
-        <span class="article-author">
-          <i class="icon-user"></i>
-          <span>Timfan</span>
-        </span>
-      
-
-      
-  <span class="article-category">
-    <i class="icon-list"></i>
-    <a class="article-category-link" href="/categories/技术/">技术</a>
-  </span>
-
-
-
-      
-
-    </div>
-  </header>
-
-  <div class="article-content">
-    
-      <p>首先购买https服务，生成crt和key文件，nginx配置如下<br><code><br>server {<br>        listen       443;<br>        server_name www.i-fanr.com;<br>        index index.html index.htm index.php;<br>        root /usr/share/nginx/www.i-fanr.com;<br>        add_header Access-Control-Allow-Origin *;</code></p>
-<pre><code>ssl on;
-ssl_certificate /etc/nginx/ssl/www.i-fanr.com.crt;
-ssl_certificate_key /etc/nginx/ssl/www.i-fanr.com.key;
-ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
-ssl_prefer_server_ciphers on;
-ssl_ciphers EECDH+CHACHA20:EECDH+AES128:RSA+AES128:EECDH+AES256:RSA+AES256:EECDH+3DES:RSA+3DES:!MD5;
-
-if ($host = &apos;i-fanr.com&apos;) {
-        rewrite ^/(.*) https://www.i-fanr.com/$1 permanent;
-}
-
-if ($request_filename !~ (ico|js|css|img|fonts|downloads|helps|robots\.txt|index\.php)) {
-        rewrite ^/(.*)$ /index.php/$1 last;
-        break;
-}
-
-location ~ \.php {
-        root /usr/share/nginx/www.i-fanr.com;
-        fastcgi_pass   127.0.0.1:9000;
-        fastcgi_index  index.php;
-        set $path_info &quot;&quot;;
-        set $real_script_name $fastcgi_script_name;
-        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
-        include        fastcgi_params;
-}
-</code></pre><p>}<br></p>
-
-    
-  </div>
-</article>
-
-</div>
-
-
-  <div class="text-center donation">
-    <div class="inner-donation">
-      <span class="btn-donation">支持一下</span>
-      <div class="donation-body">
-        <div class="tip text-center">扫一扫，支持Timfan</div>
-        <ul class="theme.donation.items.length">
-        
-          <li class="item">
-            <img src="/images/qr-wechat.png" alt="">
-          </li>
-        
-          <li class="item">
-            <img src="/images/qr-alipay.jpg" alt="">
-          </li>
-        
-        </ul>
+  <div class="box-blog-info">
+    <a class="avatar" href="/">
+      <img src="/images/avatar.jpg" alt="" />
+    </a>
+    <div class="info">
+      <h3 class="name" style="font-family: calligraffittiregular">
+        Timfan
+      </h3>
+      <div class="slogan">
+        You are more than what you have become
       </div>
     </div>
   </div>
 
+</div>
+
+
+  <div class="post-list-box archive-body">
+    <ul class="list-post">  <li class="item-year item item-title item-title-4">
+    <a href="/archives/2014" class="text-year">
+      2014
+      <i class="icon-ma"></i>
+      
+    </a>
+  </li>
+<li class="item-post item">
+  <span class="post-date">09-12</span>
+
+  <a class="post-title" href="/2014/09/12/site-https/">为网站增加https访问</a>
+
+</li>
+</ul>
+  </div>
+
+  <div class="archive-footer">
+    
+
+  </div>
+</div>
 
 
 
-  <a id="backTop" class="back-top">
-    <i class="icon-angle-up"></i>
-  </a>
 
 
 
@@ -338,35 +290,6 @@ location ~ \.php {
 </div>
 
 
-
-  
-      <div class="fexo-comments comments-post">
-    
-
-    
-  <section class="duoshuo-comments">
-    <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="" data-title="为网站增加https访问" data-url="http://i-fanr.com/2016/09/12/site-https/index.html"></div>
-    <!-- 多说评论框 end -->
-  </section>
-
-
-
-
-  <script type="text/javascript">
-  var duoshuoQuery = {short_name:"fants"};
-  (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';ds.async = true;
-    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0]
-     || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
-  </script>
-
-
-  </div>
 
   
 
