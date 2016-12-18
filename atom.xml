@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://i-fanr.com/"/>
-  <updated>2016-12-05T12:03:10.000Z</updated>
+  <updated>2016-12-18T03:59:34.000Z</updated>
   <id>http://i-fanr.com/</id>
   
   <author>
@@ -14,6 +14,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Do more or do better</title>
+    <link href="http://i-fanr.com/2016/12/18/holiday-caffee/"/>
+    <id>http://i-fanr.com/2016/12/18/holiday-caffee/</id>
+    <published>2016-12-18T03:26:12.000Z</published>
+    <updated>2016-12-18T03:59:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>今年的冬天无锡的天气异常的暖和，艳阳高照的周末，起来吃了早饭，背上电脑，乘上118和往常上班💼一样，但是却很轻松，心情自然不一样，也许是因为这样的天气😊，找了软件园旁边的3W咖啡（一个坐落在荷塘边上，优美清静的咖啡厅，阳光可以透过玻璃橱窗照进来），点了一杯咖啡开始了一天的码字生活</p>
+<p><img src="/images/IMG_20161218_110648R_01.jpg"></p>
+<p>知道为什么咖啡与程序员有着千丝万缕的联系？<code>Coding and Coffee</code>, ☕️<code>Coffee and Coding</code>，并不在于程序员有多么的喜欢喝咖啡，而在于一种生活方式，他们有着“低调”“淡雅”“安静”这样共同的标签。似乎一旦走进咖啡厅，整个世界就安静下来了。再来一杯咖啡，让整个人从慵懒中摆脱出来，很快进入到工作的状态。</p>
+<p><img src="/images/IMG_20161218_110559R.jpg"></p>
+<p>或者从书架上拿来一本书，静静滴阅读着，好像一切都是那么的理所当然，这是躺在床上，快速浏览着社交信息所无法带来的快感。在 Do More 和 Do Better的选择中，或者 Do Better更能让我体会到成就感，让我兴奋！ </p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今年的冬天无锡的天气异常的暖和，艳阳高照的周末，起来吃了早饭，背上电脑，乘上118和往常上班💼一样，但是却很轻松，心情自然不一样，也许是因为这样的天气😊，找了软件园旁边的3W咖啡（一个坐落在荷塘边上，优美清静的咖啡厅，阳光可以透过玻璃橱窗照进来），点了一杯咖啡开始了一天
+    
+    </summary>
+    
+      <category term="生活感悟" scheme="http://i-fanr.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
+    
+    
+      <category term="Coffee,Coding" scheme="http://i-fanr.com/tags/Coffee-Coding/"/>
+    
+  </entry>
   
   <entry>
     <title>不会设计的重构不是好的前端工程师</title>
