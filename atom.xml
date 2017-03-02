@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://i-fanr.com/"/>
-  <updated>2017-02-11T06:46:55.000Z</updated>
+  <updated>2017-03-02T03:39:53.000Z</updated>
   <id>http://i-fanr.com/</id>
   
   <author>
@@ -14,6 +14,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>做的比理想中更好一点</title>
+    <link href="http://i-fanr.com/2017/03/02/do-more-better-than-last-time/"/>
+    <id>http://i-fanr.com/2017/03/02/do-more-better-than-last-time/</id>
+    <published>2017-03-02T03:16:07.000Z</published>
+    <updated>2017-03-02T03:39:53.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天受平哥的点播，才发现自己一直以来做事都是完成了就OK了，长期这样是很难让自己得到提高的，会让自己在一个常态的圈子里循环。尤其在负责很多零散的项目的时候，会让自己太过注重效率而忽视做事的精度。做出来的东西要让人有一种惊艳的感觉！比理想中要好那么一点，不仅自己的自信多了，而且“审美”的能力有所提高。这样才能让自己慢慢提高。</p>
+<p>在方法上，他教会了我一点，如何让自己发现做的东西比实际做出来的要好，就是你要这样想，比如你买个四五十块钱的键盘和一个一两百的，你去摸索发现他们之间的差别，在发现的过程中，有助于提高你的认知水平，间接你在做东西的时候，如何去做会比自己平常做出来的东西要好，这应该就是一个产品经理应该有的素质吧。</p>
+<pre><code>自己想出来的一个句子：Do little and do better!
+</code></pre><p>希望自己平常做事的时候谨记这句话，不要让自己陷进常态的循环中。只有每天进步一点，每个项目中进步一点，你才可能离理想中的自己近一点。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天受平哥的点播，才发现自己一直以来做事都是完成了就OK了，长期这样是很难让自己得到提高的，会让自己在一个常态的圈子里循环。尤其在负责很多零散的项目的时候，会让自己太过注重效率而忽视做事的精度。做出来的东西要让人有一种惊艳的感觉！比理想中要好那么一点，不仅自己的自信多了，而
+    
+    </summary>
+    
+      <category term="生活感悟" scheme="http://i-fanr.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>SendCloud邮件系统使用注意事项</title>
