@@ -4,9 +4,9 @@
   <subtitle>You are more than what you have become</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://i-fanr.com/"/>
+  <link href="http://www.i-fanr.com/"/>
   <updated>2017-03-02T03:51:13.000Z</updated>
-  <id>http://i-fanr.com/</id>
+  <id>http://www.i-fanr.com/</id>
   
   <author>
     <name>Timfan</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>做的比理想中更好一点</title>
-    <link href="http://i-fanr.com/2017/03/02/do-more-better-than-last-time/"/>
-    <id>http://i-fanr.com/2017/03/02/do-more-better-than-last-time/</id>
+    <link href="http://www.i-fanr.com/2017/03/02/do-more-better-than-last-time/"/>
+    <id>http://www.i-fanr.com/2017/03/02/do-more-better-than-last-time/</id>
     <published>2017-03-02T03:16:07.000Z</published>
     <updated>2017-03-02T03:51:13.000Z</updated>
     
@@ -35,15 +35,15 @@
     
     </summary>
     
-      <category term="生活感悟" scheme="http://i-fanr.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
+      <category term="生活感悟" scheme="http://www.i-fanr.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
     
     
   </entry>
   
   <entry>
     <title>SendCloud邮件系统使用注意事项</title>
-    <link href="http://i-fanr.com/2017/02/11/sendcloud-guide/"/>
-    <id>http://i-fanr.com/2017/02/11/sendcloud-guide/</id>
+    <link href="http://www.i-fanr.com/2017/02/11/sendcloud-guide/"/>
+    <id>http://www.i-fanr.com/2017/02/11/sendcloud-guide/</id>
     <published>2017-02-11T06:44:06.000Z</published>
     <updated>2017-02-11T06:46:55.000Z</updated>
     
@@ -76,17 +76,17 @@
     
     </summary>
     
-      <category term="技术" scheme="http://i-fanr.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="http://www.i-fanr.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="SendCloud,邮件" scheme="http://i-fanr.com/tags/SendCloud-%E9%82%AE%E4%BB%B6/"/>
+      <category term="SendCloud,邮件" scheme="http://www.i-fanr.com/tags/SendCloud-%E9%82%AE%E4%BB%B6/"/>
     
   </entry>
   
   <entry>
     <title>喂，2017</title>
-    <link href="http://i-fanr.com/2017/01/05/hi2017/"/>
-    <id>http://i-fanr.com/2017/01/05/hi2017/</id>
+    <link href="http://www.i-fanr.com/2017/01/05/hi2017/"/>
+    <id>http://www.i-fanr.com/2017/01/05/hi2017/</id>
     <published>2017-01-05T15:15:10.000Z</published>
     <updated>2017-01-05T16:26:33.000Z</updated>
     
@@ -102,17 +102,17 @@
     
     </summary>
     
-      <category term="生活感悟" scheme="http://i-fanr.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
+      <category term="生活感悟" scheme="http://www.i-fanr.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
     
     
-      <category term="你好，2017" scheme="http://i-fanr.com/tags/%E4%BD%A0%E5%A5%BD%EF%BC%8C2017/"/>
+      <category term="你好，2017" scheme="http://www.i-fanr.com/tags/%E4%BD%A0%E5%A5%BD%EF%BC%8C2017/"/>
     
   </entry>
   
   <entry>
     <title>和时间做朋友</title>
-    <link href="http://i-fanr.com/2016/12/20/friend-width-life/"/>
-    <id>http://i-fanr.com/2016/12/20/friend-width-life/</id>
+    <link href="http://www.i-fanr.com/2016/12/20/friend-width-life/"/>
+    <id>http://www.i-fanr.com/2016/12/20/friend-width-life/</id>
     <published>2016-12-20T02:29:47.000Z</published>
     <updated>2016-12-20T03:31:38.000Z</updated>
     
@@ -132,17 +132,17 @@
     
     </summary>
     
-      <category term="生活感悟" scheme="http://i-fanr.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
+      <category term="生活感悟" scheme="http://www.i-fanr.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
     
     
-      <category term="时间" scheme="http://i-fanr.com/tags/%E6%97%B6%E9%97%B4/"/>
+      <category term="时间" scheme="http://www.i-fanr.com/tags/%E6%97%B6%E9%97%B4/"/>
     
   </entry>
   
   <entry>
     <title>Do more or do better</title>
-    <link href="http://i-fanr.com/2016/12/18/holiday-caffee/"/>
-    <id>http://i-fanr.com/2016/12/18/holiday-caffee/</id>
+    <link href="http://www.i-fanr.com/2016/12/18/holiday-caffee/"/>
+    <id>http://www.i-fanr.com/2016/12/18/holiday-caffee/</id>
     <published>2016-12-18T03:26:12.000Z</published>
     <updated>2016-12-18T05:29:19.000Z</updated>
     
@@ -160,19 +160,19 @@
     
     </summary>
     
-      <category term="生活感悟" scheme="http://i-fanr.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
+      <category term="生活感悟" scheme="http://www.i-fanr.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
     
     
-      <category term="Coffee" scheme="http://i-fanr.com/tags/Coffee/"/>
+      <category term="Coffee" scheme="http://www.i-fanr.com/tags/Coffee/"/>
     
-      <category term="Coding" scheme="http://i-fanr.com/tags/Coding/"/>
+      <category term="Coding" scheme="http://www.i-fanr.com/tags/Coding/"/>
     
   </entry>
   
   <entry>
     <title>不会设计的重构不是好的前端工程师</title>
-    <link href="http://i-fanr.com/2016/12/05/front-end-developer/"/>
-    <id>http://i-fanr.com/2016/12/05/front-end-developer/</id>
+    <link href="http://www.i-fanr.com/2016/12/05/front-end-developer/"/>
+    <id>http://www.i-fanr.com/2016/12/05/front-end-developer/</id>
     <published>2016-12-05T11:29:04.000Z</published>
     <updated>2016-12-05T12:03:10.000Z</updated>
     
@@ -188,17 +188,17 @@
     
     </summary>
     
-      <category term="设计" scheme="http://i-fanr.com/categories/%E8%AE%BE%E8%AE%A1/"/>
+      <category term="设计" scheme="http://www.i-fanr.com/categories/%E8%AE%BE%E8%AE%A1/"/>
     
     
-      <category term="前端开发" scheme="http://i-fanr.com/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+      <category term="前端开发" scheme="http://www.i-fanr.com/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   
   <entry>
     <title>消灭拖延症</title>
-    <link href="http://i-fanr.com/2016/11/27/Eradicate-procrastination/"/>
-    <id>http://i-fanr.com/2016/11/27/Eradicate-procrastination/</id>
+    <link href="http://www.i-fanr.com/2016/11/27/Eradicate-procrastination/"/>
+    <id>http://www.i-fanr.com/2016/11/27/Eradicate-procrastination/</id>
     <published>2016-11-27T06:41:03.000Z</published>
     <updated>2016-11-27T06:55:03.000Z</updated>
     
@@ -214,17 +214,17 @@
     
     </summary>
     
-      <category term="生活感悟" scheme="http://i-fanr.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
+      <category term="生活感悟" scheme="http://www.i-fanr.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
     
     
-      <category term="拖延症" scheme="http://i-fanr.com/tags/%E6%8B%96%E5%BB%B6%E7%97%87/"/>
+      <category term="拖延症" scheme="http://www.i-fanr.com/tags/%E6%8B%96%E5%BB%B6%E7%97%87/"/>
     
   </entry>
   
   <entry>
     <title>心情日记</title>
-    <link href="http://i-fanr.com/2016/11/18/mood-diary/"/>
-    <id>http://i-fanr.com/2016/11/18/mood-diary/</id>
+    <link href="http://www.i-fanr.com/2016/11/18/mood-diary/"/>
+    <id>http://www.i-fanr.com/2016/11/18/mood-diary/</id>
     <published>2016-11-18T15:02:41.000Z</published>
     <updated>2016-12-18T05:12:32.000Z</updated>
     
@@ -247,17 +247,17 @@
     
     </summary>
     
-      <category term="生活感悟" scheme="http://i-fanr.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
+      <category term="生活感悟" scheme="http://www.i-fanr.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
     
     
-      <category term="生活感悟" scheme="http://i-fanr.com/tags/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
+      <category term="生活感悟" scheme="http://www.i-fanr.com/tags/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
     
   </entry>
   
   <entry>
     <title>内向型人与外向型人</title>
-    <link href="http://i-fanr.com/2016/10/21/people-character/"/>
-    <id>http://i-fanr.com/2016/10/21/people-character/</id>
+    <link href="http://www.i-fanr.com/2016/10/21/people-character/"/>
+    <id>http://www.i-fanr.com/2016/10/21/people-character/</id>
     <published>2016-10-21T08:55:59.000Z</published>
     <updated>2016-11-19T09:11:30.000Z</updated>
     
@@ -278,17 +278,17 @@
     
     </summary>
     
-      <category term="生活感悟" scheme="http://i-fanr.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
+      <category term="生活感悟" scheme="http://www.i-fanr.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
     
     
-      <category term="性格" scheme="http://i-fanr.com/tags/%E6%80%A7%E6%A0%BC/"/>
+      <category term="性格" scheme="http://www.i-fanr.com/tags/%E6%80%A7%E6%A0%BC/"/>
     
   </entry>
   
   <entry>
     <title>技术人的业余项目(side project)</title>
-    <link href="http://i-fanr.com/2016/10/16/side-project/"/>
-    <id>http://i-fanr.com/2016/10/16/side-project/</id>
+    <link href="http://www.i-fanr.com/2016/10/16/side-project/"/>
+    <id>http://www.i-fanr.com/2016/10/16/side-project/</id>
     <published>2016-10-16T09:25:19.000Z</published>
     <updated>2016-10-16T10:05:35.000Z</updated>
     
@@ -308,17 +308,17 @@
     
     </summary>
     
-      <category term="生活感悟" scheme="http://i-fanr.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
+      <category term="生活感悟" scheme="http://www.i-fanr.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
     
     
-      <category term="业余项目" scheme="http://i-fanr.com/tags/%E4%B8%9A%E4%BD%99%E9%A1%B9%E7%9B%AE/"/>
+      <category term="业余项目" scheme="http://www.i-fanr.com/tags/%E4%B8%9A%E4%BD%99%E9%A1%B9%E7%9B%AE/"/>
     
   </entry>
   
   <entry>
     <title>与技术大咖的交流</title>
-    <link href="http://i-fanr.com/2016/10/16/think-twice/"/>
-    <id>http://i-fanr.com/2016/10/16/think-twice/</id>
+    <link href="http://www.i-fanr.com/2016/10/16/think-twice/"/>
+    <id>http://www.i-fanr.com/2016/10/16/think-twice/</id>
     <published>2016-10-16T09:16:51.000Z</published>
     <updated>2016-12-18T05:28:39.000Z</updated>
     
@@ -342,19 +342,19 @@
     
     </summary>
     
-      <category term="生活感悟" scheme="http://i-fanr.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
+      <category term="生活感悟" scheme="http://www.i-fanr.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
     
     
-      <category term="交流" scheme="http://i-fanr.com/tags/%E4%BA%A4%E6%B5%81/"/>
+      <category term="交流" scheme="http://www.i-fanr.com/tags/%E4%BA%A4%E6%B5%81/"/>
     
-      <category term="分享" scheme="http://i-fanr.com/tags/%E5%88%86%E4%BA%AB/"/>
+      <category term="分享" scheme="http://www.i-fanr.com/tags/%E5%88%86%E4%BA%AB/"/>
     
   </entry>
   
   <entry>
     <title>阿里云主机wordpress漏洞官方修复方案汇总</title>
-    <link href="http://i-fanr.com/2016/09/22/aliyun/"/>
-    <id>http://i-fanr.com/2016/09/22/aliyun/</id>
+    <link href="http://www.i-fanr.com/2016/09/22/aliyun/"/>
+    <id>http://www.i-fanr.com/2016/09/22/aliyun/</id>
     <published>2016-09-22T03:32:59.000Z</published>
     <updated>2016-10-16T09:33:26.000Z</updated>
     
@@ -398,17 +398,17 @@
     
     </summary>
     
-      <category term="技术" scheme="http://i-fanr.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="http://www.i-fanr.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="漏洞" scheme="http://i-fanr.com/tags/%E6%BC%8F%E6%B4%9E/"/>
+      <category term="漏洞" scheme="http://www.i-fanr.com/tags/%E6%BC%8F%E6%B4%9E/"/>
     
   </entry>
   
   <entry>
     <title>设计十诫</title>
-    <link href="http://i-fanr.com/2015/12/23/design-way/"/>
-    <id>http://i-fanr.com/2015/12/23/design-way/</id>
+    <link href="http://www.i-fanr.com/2015/12/23/design-way/"/>
+    <id>http://www.i-fanr.com/2015/12/23/design-way/</id>
     <published>2015-12-23T09:10:33.000Z</published>
     <updated>2016-10-21T09:07:15.000Z</updated>
     
@@ -433,17 +433,17 @@
     
     </summary>
     
-      <category term="设计" scheme="http://i-fanr.com/categories/%E8%AE%BE%E8%AE%A1/"/>
+      <category term="设计" scheme="http://www.i-fanr.com/categories/%E8%AE%BE%E8%AE%A1/"/>
     
     
-      <category term="设计" scheme="http://i-fanr.com/tags/%E8%AE%BE%E8%AE%A1/"/>
+      <category term="设计" scheme="http://www.i-fanr.com/tags/%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
   <entry>
     <title>2016年Web前端设计的10大趋势</title>
-    <link href="http://i-fanr.com/2015/11/01/web-dev-trend/"/>
-    <id>http://i-fanr.com/2015/11/01/web-dev-trend/</id>
+    <link href="http://www.i-fanr.com/2015/11/01/web-dev-trend/"/>
+    <id>http://www.i-fanr.com/2015/11/01/web-dev-trend/</id>
     <published>2015-11-01T12:10:33.000Z</published>
     <updated>2016-10-21T09:05:40.000Z</updated>
     
@@ -495,17 +495,17 @@
     
     </summary>
     
-      <category term="技术" scheme="http://i-fanr.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="http://www.i-fanr.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="前端设计" scheme="http://i-fanr.com/tags/%E5%89%8D%E7%AB%AF%E8%AE%BE%E8%AE%A1/"/>
+      <category term="前端设计" scheme="http://www.i-fanr.com/tags/%E5%89%8D%E7%AB%AF%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
   <entry>
     <title>为网站增加https访问</title>
-    <link href="http://i-fanr.com/2014/09/12/site-https/"/>
-    <id>http://i-fanr.com/2014/09/12/site-https/</id>
+    <link href="http://www.i-fanr.com/2014/09/12/site-https/"/>
+    <id>http://www.i-fanr.com/2014/09/12/site-https/</id>
     <published>2014-09-12T06:20:25.000Z</published>
     <updated>2016-11-19T09:11:28.000Z</updated>
     
@@ -544,17 +544,17 @@ location ~ \.php {
     
     </summary>
     
-      <category term="技术" scheme="http://i-fanr.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="http://www.i-fanr.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="HTTPS" scheme="http://i-fanr.com/tags/HTTPS/"/>
+      <category term="HTTPS" scheme="http://www.i-fanr.com/tags/HTTPS/"/>
     
   </entry>
   
   <entry>
     <title>WordPress用户密码忘记且无法重置的解决办法</title>
-    <link href="http://i-fanr.com/2014/08/08/wp-change-pass/"/>
-    <id>http://i-fanr.com/2014/08/08/wp-change-pass/</id>
+    <link href="http://www.i-fanr.com/2014/08/08/wp-change-pass/"/>
+    <id>http://www.i-fanr.com/2014/08/08/wp-change-pass/</id>
     <published>2014-08-08T06:20:25.000Z</published>
     <updated>2016-11-19T09:11:26.000Z</updated>
     
@@ -580,10 +580,10 @@ location ~ \.php {
     
     </summary>
     
-      <category term="技术" scheme="http://i-fanr.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="http://www.i-fanr.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="Wordpress" scheme="http://i-fanr.com/tags/Wordpress/"/>
+      <category term="Wordpress" scheme="http://www.i-fanr.com/tags/Wordpress/"/>
     
   </entry>
   
