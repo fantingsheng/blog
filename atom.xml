@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.i-fanr.com/"/>
-  <updated>2017-03-02T03:51:13.000Z</updated>
+  <updated>2017-05-26T11:22:24.000Z</updated>
   <id>http://www.i-fanr.com/</id>
   
   <author>
@@ -14,6 +14,109 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何几行代码让你的网站具有艺术的气息？</title>
+    <link href="http://www.i-fanr.com/2017/05/26/frontend-best/"/>
+    <id>http://www.i-fanr.com/2017/05/26/frontend-best/</id>
+    <published>2017-05-26T11:04:00.000Z</published>
+    <updated>2017-05-26T11:22:24.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天看到Vue Js创始人，尤雨溪，知乎上slogon是这样写的“不会搞艺术的程序员不是好设计师”。设计出生的他，还能在软件开发上有这么深的造诣，简直了！所谓牛人干什么都那么牛，终于相信了。</p>
+<p>他的博客首页风格简约，透着大气，click产生的彩带动效，很具设计师的气质。<code>Design, Code &amp; Things in Between</code>游走于代码和设计之间的大神，何尝不是我的追求。</p>
+<center><img src="/images/evanyou.png"></center>
+
+<p>####实现代码</p>
+<pre><code>
+    <canvas></canvas>
+    <script>
+        document.addEventListener('touchmove', function (e) {
+            e.preventDefault()
+        })
+        var c = document.getElementsByTagName('canvas')[0],
+            x = c.getContext('2d'),
+            pr = window.devicePixelRatio || 1,
+            w = window.innerWidth,
+            h = window.innerHeight,
+            f = 90,
+            q,
+            m = Math,
+            r = 0,
+            u = m.PI*2,
+            v = m.cos,
+            z = m.random
+        c.width = w*pr
+        c.height = h*pr
+        x.scale(pr, pr)
+        x.globalAlpha = 0.6
+        function i(){
+            x.clearRect(0,0,w,h)
+            q=[{x:0,y:h*.7+f},{x:0,y:h*.7-f}]
+            while(q[1].x<w+f) d(q[0], q[1])
+        }
+        function d(i,j){   
+            x.beginPath()
+            x.moveTo(i.x, i.y)
+            x.lineTo(j.x, j.y)
+            var k = j.x + (z()*2-0.25)*f,
+                n = y(j.y)
+            x.lineTo(k, n)
+            x.closePath()
+            r-=u/-50
+            x.fillStyle = '#'+(v(r)*127+128<<16 | v(r+u/3)*127+128<<8 | v(r+u/3*2)*127+128).toString(16)
+            x.fill()
+            q[0] = q[1]
+            q[1] = {x:k,y:n}
+        }
+        function y(p){
+            var t = p + (z()*2-1.1)*f
+            return (t>h||t<0) ? y(p) : t
+        }
+        document.onclick = i
+        document.ontouchstart = i
+        i()
+    </script>
+</code></pre>
+
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天看到Vue Js创始人，尤雨溪，知乎上slogon是这样写的“不会搞艺术的程序员不是好设计师”。设计出生的他，还能在软件开发上有这么深的造诣，简直了！所谓牛人干什么都那么牛，终于相信了。&lt;/p&gt;
+&lt;p&gt;他的博客首页风格简约，透着大气，click产生的彩带动效，很具设计师
+    
+    </summary>
+    
+      <category term="前端" scheme="http://www.i-fanr.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端开发" scheme="http://www.i-fanr.com/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>FDconf 2017 前端开发者的未来</title>
+    <link href="http://www.i-fanr.com/2017/04/11/fdconf2017/"/>
+    <id>http://www.i-fanr.com/2017/04/11/fdconf2017/</id>
+    <published>2017-04-11T12:36:11.000Z</published>
+    <updated>2017-04-11T12:39:23.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/zhiboxiaolai.jpg"></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/zhiboxiaolai.jpg&quot;&gt;&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="前端开发" scheme="http://www.i-fanr.com/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="前端开发" scheme="http://www.i-fanr.com/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
   
   <entry>
     <title>做的比理想中更好一点</title>
