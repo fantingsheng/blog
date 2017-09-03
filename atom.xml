@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.i-fanr.com/"/>
-  <updated>2017-08-04T02:47:09.000Z</updated>
+  <updated>2017-09-03T16:13:11.000Z</updated>
   <id>http://www.i-fanr.com/</id>
   
   <author>
@@ -14,6 +14,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一封关于开源软件multiple-host的使用问题的提issues的邮件</title>
+    <link href="http://www.i-fanr.com/2017/09/03/mailhost/"/>
+    <id>http://www.i-fanr.com/2017/09/03/mailhost/</id>
+    <published>2017-09-03T15:17:00.000Z</published>
+    <updated>2017-09-03T16:13:11.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>在开发中经常会改本机的host去区分线上和线下的环境，导致一个什么问题呢？浏览器的缓存，不能立马生效，使用chrome尤为严重。频繁的改不仅麻烦还不生效，这就是我之前一直苦恼的问题。后来查找有没有相关的解决办法。相信一点，没有什么能够难倒程序员。果真有大神针对此问题，开发了一款软件multiple-host的软件，附上github上的项目开源地址 <a href="https://github.com/liyangready/multiple-host" target="_blank" rel="external">https://github.com/liyangready/multiple-host</a></p>
+<p>软件简洁好用，只要在配置里填写相应的host映射，然后启动你喜欢的浏览器，打开就是一个独立的虚拟的环境，完全区别于线上的，你打开电脑上的浏览器就可以实现线上和线下的两套环境进行开发调试。</p>
+<p>不过使用中出现了一个问题，启动chrome浏览器使用一段时间就会出现卡死的现象，什么网站都打不开，需要关闭软件重新启动虚拟浏览器。对于不懂这方面开发的我只能默默忍受了多次这样的过程，昨天突然想到在github里提了一个issues，并且发现作者的邮箱写了如下的一封邮件：</p>
+<center><img src="/images/mail-send.png"></center>
+
+<p>非常客气并大赞了作者一把，果然开源的人都是心存善念的，有着拯救世界的心的人，今天收到了作者的回信：</p>
+<center><img src="/images/mail-back.png"></center>
+
+<p>谁让优秀的程序猿都有一颗极客的心，他们是无法忍受做出来的东西有半点瑕疵的。你对他的产品提出bug是对他最大的尊敬！作为一名合格的程序猿，就应该抱有一颗开源奉献的精神。每每不懂的问题通过搜索找到解决办法，就会对这些分享经验知识的人有种崇敬之情。心想着，如今我在不断的吸取着知识，等到有一天把我所知道的东西分享到网上，为有此类问题的人答疑解惑，那便完成了一次知识的传承和心灵上的沟通。着便是互联网真正的价值所在。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在开发中经常会改本机的host去区分线上和线下的环境，导致一个什么问题呢？浏览器的缓存，不能立马生效，使用chrome尤为严重。频繁的改不仅麻烦还不生效，这就是我之前一直苦恼的问题。后来查找有没有相关的解决办法。相信一点，没有什么能够难倒程序员。果真有大神针对此问题，开发了
+    
+    </summary>
+    
+      <category term="技术" scheme="http://www.i-fanr.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="issues,开发" scheme="http://www.i-fanr.com/tags/issues-%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
   
   <entry>
     <title>WordPress实现论坛功能--bbPress插件</title>
@@ -683,42 +714,6 @@ location ~ \.php {
     
     
       <category term="HTTPS" scheme="http://www.i-fanr.com/tags/HTTPS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>WordPress用户密码忘记且无法重置的解决办法</title>
-    <link href="http://www.i-fanr.com/2014/08/08/wp-change-pass/"/>
-    <id>http://www.i-fanr.com/2014/08/08/wp-change-pass/</id>
-    <published>2014-08-08T06:20:25.000Z</published>
-    <updated>2016-11-19T09:11:26.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>你忘记密码通过找回密码页面发送重置密码页面的时候可能还会遇到接收不到邮件的情况。怎么办呢?垃圾邮件中也没有。。。怎么办？</p>
-<h3 id="办法1：通过phpMyAdmin来重置密码"><a href="#办法1：通过phpMyAdmin来重置密码" class="headerlink" title="办法1：通过phpMyAdmin来重置密码"></a>办法1：通过phpMyAdmin来重置密码</h3><p>step1：通过cpanel或者DA等主机管理工具登陆到phpMyAdmin ，并选择自己使用的数据库；</p>
-<p>step2：打开wp_users 表（或者会带有前缀的，但表名以users结尾）；</p>
-<p>step3：找到自己的用户名并编辑user_pass列，输入你想要的密码并在函数下拉菜单中选择MD5 这个函数；</p>
-<p>step4：点击GO，就可以保存密码，然后重新登陆下WordPress试试。</p>
-<h3 id="办法2：通过functions-php-来重置密码"><a href="#办法2：通过functions-php-来重置密码" class="headerlink" title="办法2：通过functions.php 来重置密码"></a>办法2：通过functions.php 来重置密码</h3><p>上述办法还是有点技术含量的，如果没折腾过主机的朋友，估计会很纠结，不过通过functions.php 来重置稍微简单点了。</p>
-<p>step1：把现在使用的主题的functions.php 下载下来（ftp或者通过主机控制面板都可以）；</p>
-<p>step2：在functions.php 中添加代码，其中NewPassword是你想设置的新密码，1是你要重置密码的id号（一般情况下创始人的id为1）。</p>
-<p><code>wp_set_password(‘NewPassword’, 1);</code></p>
-<p>step3：保存该文件并上传到你当前使用的主题下面；</p>
-<p>step4：随便访问你WordPress任何一篇文章，然后尝试用新密码登录；</p>
-<p>step5：如果你能够登陆成功了，就把上述代码从functions.php移除保存并重新上传到当前主题目录下。</p>
-<p>OK，两种重置办法就讲到这里。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;你忘记密码通过找回密码页面发送重置密码页面的时候可能还会遇到接收不到邮件的情况。怎么办呢?垃圾邮件中也没有。。。怎么办？&lt;/p&gt;
-&lt;h3 id=&quot;办法1：通过phpMyAdmin来重置密码&quot;&gt;&lt;a href=&quot;#办法1：通过phpMyAdmin来重置密码&quot; class=&quot;h
-    
-    </summary>
-    
-      <category term="技术" scheme="http://www.i-fanr.com/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="Wordpress" scheme="http://www.i-fanr.com/tags/Wordpress/"/>
     
   </entry>
   
