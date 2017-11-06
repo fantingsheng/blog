@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.i-fanr.com/"/>
-  <updated>2017-09-03T16:13:11.000Z</updated>
+  <updated>2017-11-06T08:26:18.000Z</updated>
   <id>http://www.i-fanr.com/</id>
   
   <author>
@@ -14,6 +14,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何用wordpress作为后端快速开发一个小程序</title>
+    <link href="http://www.i-fanr.com/2017/11/06/minapp/"/>
+    <id>http://www.i-fanr.com/2017/11/06/minapp/</id>
+    <published>2017-11-06T08:17:00.000Z</published>
+    <updated>2017-11-06T08:26:18.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>小程序自从开放出来，一直处于要火不火的状态，但是企业也把应用的小程序开发作为除WEB端，iOS端，安卓端三端之外的另一个必不可少的平台。随着小程序开放的能力越来越多，小程序所实现的应用能力也越来越强。</p>
+<p>正好公司需要做一个类似于社区讨论的小程序，初次接触小程序开发，被后端开发难住了，虽然会点PHP，但是如果全部自己开发，那个工作量还是不小的。于是想这个现成的后端方案，前端设计提供设计稿，开发下倒不是难事。Github还真是开源界的万能朋友圈啊，有人用wordpress提供的查询接口和自己开发插件提供的提交评论点赞接口，全了！</p>
+<p>接下来有了设计稿就是开发了，作为一个略懂后端的前端程序员，小程序还是很容易上手的，几乎过一遍开发文档就能写了。感觉开发就是朝着一个垒积木的方向在进化着，会不断地向上层去开发，很多东西被封装，不需要你关心，你唯一关心的是业务逻辑，然后用框架所提供的代码块去实现。</p>
+<p>讲下这个小程序功能逻辑，主要三大块</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;小程序自从开放出来，一直处于要火不火的状态，但是企业也把应用的小程序开发作为除WEB端，iOS端，安卓端三端之外的另一个必不可少的平台。随着小程序开放的能力越来越多，小程序所实现的应用能力也越来越强。&lt;/p&gt;
+&lt;p&gt;正好公司需要做一个类似于社区讨论的小程序，初次接触小程序开
+    
+    </summary>
+    
+      <category term="技术" scheme="http://www.i-fanr.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="wordpress,小程序" scheme="http://www.i-fanr.com/tags/wordpress-%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>一封关于开源软件multiple-host的使用问题的提issues的邮件</title>
@@ -665,55 +692,6 @@
     
     
       <category term="前端设计" scheme="http://www.i-fanr.com/tags/%E5%89%8D%E7%AB%AF%E8%AE%BE%E8%AE%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>为网站增加https访问</title>
-    <link href="http://www.i-fanr.com/2014/09/12/site-https/"/>
-    <id>http://www.i-fanr.com/2014/09/12/site-https/</id>
-    <published>2014-09-12T06:20:25.000Z</published>
-    <updated>2016-11-19T09:11:28.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>首先购买https服务，生成crt和key文件，nginx配置如下<br><code><br>server {<br>        listen       443;<br>        server_name www.i-fanr.com;<br>        index index.html index.htm index.php;<br>        root /usr/share/nginx/www.i-fanr.com;<br>        add_header Access-Control-Allow-Origin *;</code></p>
-<pre><code>ssl on;
-ssl_certificate /etc/nginx/ssl/www.i-fanr.com.crt;
-ssl_certificate_key /etc/nginx/ssl/www.i-fanr.com.key;
-ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
-ssl_prefer_server_ciphers on;
-ssl_ciphers EECDH+CHACHA20:EECDH+AES128:RSA+AES128:EECDH+AES256:RSA+AES256:EECDH+3DES:RSA+3DES:!MD5;
-
-if ($host = &apos;i-fanr.com&apos;) {
-        rewrite ^/(.*) https://www.i-fanr.com/$1 permanent;
-}
-
-if ($request_filename !~ (ico|js|css|img|fonts|downloads|helps|robots\.txt|index\.php)) {
-        rewrite ^/(.*)$ /index.php/$1 last;
-        break;
-}
-
-location ~ \.php {
-        root /usr/share/nginx/www.i-fanr.com;
-        fastcgi_pass   127.0.0.1:9000;
-        fastcgi_index  index.php;
-        set $path_info &quot;&quot;;
-        set $real_script_name $fastcgi_script_name;
-        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
-        include        fastcgi_params;
-}
-</code></pre><p>}<br></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;首先购买https服务，生成crt和key文件，nginx配置如下&lt;br&gt;&lt;code&gt;&lt;br&gt;server {&lt;br&gt;        listen       443;&lt;br&gt;        server_name www.i-fanr.com;&lt;br&gt;        in
-    
-    </summary>
-    
-      <category term="技术" scheme="http://www.i-fanr.com/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="HTTPS" scheme="http://www.i-fanr.com/tags/HTTPS/"/>
     
   </entry>
   
