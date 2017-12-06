@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+
+
+  <html class="light page-post">
+
+
+<head>
+  <meta charset="utf-8">
+  
+  <title>小程序开发好之后，你还需要做些什么？ | Write more, Think more</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="小程序," />
+  
+
+  <meta name="description" content="继之前写的一篇文章”如何用wordpress作为后端快速开发一个小程序“，做了一款科技资讯和话题讨论的小程序，对小程序的开发工作基本有了个了解，概括下来，有以下几点：
+
+申请小程序账号
+购买服务器和申请域名，并设置域名ssl支持https访问（小程序调用接口需要https支持）
+开发工具的使用，并熟悉调试
+发布测试版，添加测试人员名单
+最后，发布上线等待官方审核
+通过审核之后你还需要做些什么？">
+<meta property="og:type" content="article">
+<meta property="og:title" content="小程序开发好之后，你还需要做些什么？">
+<meta property="og:url" content="http://www.i-fanr.com/2017/12/06/minapp-call/index.html">
+<meta property="og:site_name" content="Write more, Think more">
+<meta property="og:description" content="继之前写的一篇文章”如何用wordpress作为后端快速开发一个小程序“，做了一款科技资讯和话题讨论的小程序，对小程序的开发工作基本有了个了解，概括下来，有以下几点：
+
+申请小程序账号
+购买服务器和申请域名，并设置域名ssl支持https访问（小程序调用接口需要https支持）
+开发工具的使用，并熟悉调试
+发布测试版，添加测试人员名单
+最后，发布上线等待官方审核
+通过审核之后你还需要做些什么？">
+<meta property="og:image" content="http://www.i-fanr.com/images/560a8991b87c2c0715590399b52c032e23467402-95cd371e44e65cf9e37a1a73a0dbcea238a17cd7.jpg">
+<meta property="og:image" content="http://www.i-fanr.com/images/QQ20171206-112845.jpg">
+<meta property="og:image" content="http://www.i-fanr.com/images/WechatIMG21.jpg">
+<meta property="og:image" content="http://www.i-fanr.com/images/QQ20171206-114322.jpg">
+<meta property="og:updated_time" content="2017-12-06T04:59:42.307Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="小程序开发好之后，你还需要做些什么？">
+<meta name="twitter:description" content="继之前写的一篇文章”如何用wordpress作为后端快速开发一个小程序“，做了一款科技资讯和话题讨论的小程序，对小程序的开发工作基本有了个了解，概括下来，有以下几点：
+
+申请小程序账号
+购买服务器和申请域名，并设置域名ssl支持https访问（小程序调用接口需要https支持）
+开发工具的使用，并熟悉调试
+发布测试版，添加测试人员名单
+最后，发布上线等待官方审核
+通过审核之后你还需要做些什么？">
+<meta name="twitter:image" content="http://www.i-fanr.com/images/560a8991b87c2c0715590399b52c032e23467402-95cd371e44e65cf9e37a1a73a0dbcea238a17cd7.jpg">
+
+  
+    <link rel="alternate" href="/atom.xml" title="Write more, Think more" type="application/atom+xml">
+  
+
+  
+    <link rel="icon" href="/images/favicon.ico">
+  
+
+  <link href="/css/styles.css?v=028c63b1" rel="stylesheet">
+
+
+  
+    <link rel="stylesheet" href="/css/personal-style.css">
+  
+
+  
+
+  
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?adfdc28b1809abcd238ff50a1a364033";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+  
+     <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
+  
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-1398727179052429",
+      enable_page_level_ads: true
+    });
+  </script>
+  
+</head>
+
+<body>
+
+
+  
+    <span id="toolbox-mobile" class="toolbox-mobile">首页</span>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">首页</span>
+      <i class="icon-angle-down"></i>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/archives/"
+            target="_self"
+            >
+            博客
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/category/"
+            target="_self"
+            >
+            分类
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/tag/"
+            target="_self"
+            >
+            标签
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/link/"
+            target="_self"
+            >
+            友链
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/about/"
+            target="_self"
+            >
+            关于
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/atom.xml"
+            target="_blank"
+            >
+            RSS
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/search/"
+            target="_self"
+            >
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-minapp-call" class="article article-type-post" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">小程序开发好之后，你还需要做些什么？</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2017.12.06</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>Timfan</span>
+        </span>
+      
+
+      
+  <span class="article-category">
+    <i class="icon-list"></i>
+    <a class="article-category-link" href="/categories/技术/">技术</a>
+  </span>
+
+
+
+      
+
+      
+        <i class="fa fa-eye"></i> 
+          <span id="busuanzi_container_page_pv">
+           &nbsp热度 <span id="busuanzi_value_page_pv">
+            <i class="fa fa-spinner fa-spin"></i></span>℃
+          </span>
+       
+
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <p>继之前写的一篇文章”如何用wordpress作为后端快速开发一个小程序“，做了一款科技资讯和话题讨论的小程序，对小程序的开发工作基本有了个了解，概括下来，有以下几点：</p>
+<ol>
+<li>申请小程序账号</li>
+<li>购买服务器和申请域名，并设置域名ssl支持https访问（小程序调用接口需要https支持）</li>
+<li>开发工具的使用，并熟悉调试</li>
+<li>发布测试版，添加测试人员名单</li>
+<li>最后，发布上线等待官方审核</li>
+<li>通过审核之后你还需要做些什么？</li>
+</ol>
+<p>可能做过App开发的都知道，做好一款App，iOS端要发布应用到App store，Android要发布到各大手机厂商的应用商店。那么小程序是不是也需要发布到平台呢？都知道小程序没有做自己的官方商店，用户可以从微信端的小程序搜索入口搜索到已经上线的小程序。秉承用完即走的操作理念，小程序相当的封闭。不过第三方看到了这点，立即补缺了这一块！科技媒体“爱范儿”做了知晓程序，体验还是不错的，应该是目前做的最好的小程序商店。跟App商店差不多，你需要填写一些小程序的信息和应用截图，唯一多的是要提供小程序码</p>
+<center><img src="/images/560a8991b87c2c0715590399b52c032e23467402-95cd371e44e65cf9e37a1a73a0dbcea238a17cd7.jpg"></center>
+
+<p>发布小程序后，你需要等待审核，一般按照要求填写信息，都会很快通过它们审核。有人可能会问，为什么要这么麻烦去应用商店发布？试想小程序入口这么深，如果用户不知道你的小程序名称，他怎么能发现它。如果只是通过上面的小程序码去宣传，未免太缺乏信息，自然也就不能让用户产生带入感。</p>
+<center><img src="/images/QQ20171206-112845.jpg"></center>
+
+<p>即使手机端也有不错的体验</p>
+<center><img src="/images/WechatIMG21.jpg"></center>
+
+<p>除了知晓程序这样的比较正规大的应用商店，还有其它一些小的商店，比如轻应用商店，小程序商店，微信小程序大全等等一些商店，有的需要你去提交，有的不知道是别人提交的还是它自己去抓取的，总之多了一个平台展示，你的应用就多了一些曝光。</p>
+<p>接下来，你可以去小程序后台查看数据，在左侧栏里有个数据分析菜单，里面可以看到小程序的各种数据</p>
+<center><img src="/images/QQ20171206-114322.jpg"></center>
+
+<p>方便你去分析你的产品情况，访问分析里面可以看到你的小程序的打开情况，用户的留存和具体页面的访问情况，还有最好的一点是用户画像，让你清楚的知道你的用户的一些具体的信息，帮你分析的产品的目标受众，来改善产品的设计。</p>
+<p>腾讯大厂想的还真是细腻，我们要学习他们的产品思维！你还可以在后台推广里设置你的关键词，让你的小程序更容易被带有某些关键词的搜索搜到，以及在附近的小程序菜单里添加你的小程序所在地的地址信息，这样用户进入小程序搜索的时候，显示的附近的小程序里发现你的小程序推荐！</p>
+<p>总之做好一款应用不只是做好那么简单，后面的宣传和跟踪数据一样必不可少，这样才能让你的产品不断发现问题，不断迭代，越做越好，口碑最重要！</p>
+
+    
+  </div>
+</article>
+
+</div>
+
+
+  <div class="text-center donation">
+    <div class="inner-donation">
+      <span class="btn-donation">支持一下</span>
+      <div class="donation-body">
+        <div class="tip text-center">扫一扫，支持Timfan</div>
+        <ul class="theme.donation.items.length">
+        
+          <li class="item">
+            <img src="/images/qr-wechat.png" alt="">
+          </li>
+        
+          <li class="item">
+            <img src="/images/qr-alipay.jpg" alt="">
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal">
+  <span id="cover" class="cover hide"></span>
+  <div id="modal-dialog" class="modal-dialog hide-dialog">
+    <div class="modal-header">
+      <span id="close" class="btn-close">关闭</span>
+    </div>
+    <hr>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/archives/"
+              target="_self"
+              >
+              博客
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/category/"
+              target="_self"
+              >
+              分类
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/tag/"
+              target="_self"
+              >
+              标签
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/link/"
+              target="_self"
+              >
+              友链
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/about/"
+              target="_self"
+              >
+              关于
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/atom.xml"
+              target="_blank"
+              >
+              RSS
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/search/"
+              target="_self"
+              >
+              搜索
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-post">
+    
+
+    
+  <section class="duoshuo-comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="" data-title="小程序开发好之后，你还需要做些什么？" data-url="http://www.i-fanr.com/2017/12/06/minapp-call/index.html"></div>
+    <!-- 多说评论框 end -->
+  </section>
+
+
+
+
+  <script type="text/javascript">
+  var duoshuoQuery = {short_name:"fants"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+
+
+  </div>
+
+  
+
+  <script type="text/javascript">
+  function loadScript(url, callback) {
+    var script = document.createElement('script')
+    script.type = 'text/javascript';
+
+    if (script.readyState) { //IE
+      script.onreadystatechange = function() {
+        if (script.readyState == 'loaded' ||
+          script.readyState == 'complete') {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else { //Others
+      script.onload = function() {
+        callback();
+      };
+    }
+
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  window.onload = function() {
+    loadScript('/js/bundle.js?235683', function() {
+      // load success
+    });
+  }
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>
