@@ -15,16 +15,16 @@
     <meta name="keywords" content="HTTPS," />
   
 
-  <meta name="description" content="首先购买https服务，生成crt和key文件，nginx配置如下server {        listen       443;        server_name www.i-fanr.com;        index index.html index.htm index.php;        root /usr/share/nginx/www.i-fanr.com;        a">
+  <meta name="description" content="首先购买https服务，生成crt和key文件，nginx配置如下server {        listen       443;        server_name blog.i-fanr.com;        index index.html index.htm index.php;        root /usr/share/nginx/blog.i-fanr.com;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="为网站增加https访问">
-<meta property="og:url" content="http://www.i-fanr.com/2014/09/12/site-https/index.html">
+<meta property="og:url" content="http://blog.i-fanr.com/2014/09/12/site-https/index.html">
 <meta property="og:site_name" content="Write more, Think more">
-<meta property="og:description" content="首先购买https服务，生成crt和key文件，nginx配置如下server {        listen       443;        server_name www.i-fanr.com;        index index.html index.htm index.php;        root /usr/share/nginx/www.i-fanr.com;        a">
-<meta property="og:updated_time" content="2016-11-19T09:11:28.000Z">
+<meta property="og:description" content="首先购买https服务，生成crt和key文件，nginx配置如下server {        listen       443;        server_name blog.i-fanr.com;        index index.html index.htm index.php;        root /usr/share/nginx/blog.i-fanr.com;">
+<meta property="og:updated_time" content="2018-03-03T03:57:09.399Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="为网站增加https访问">
-<meta name="twitter:description" content="首先购买https服务，生成crt和key文件，nginx配置如下server {        listen       443;        server_name www.i-fanr.com;        index index.html index.htm index.php;        root /usr/share/nginx/www.i-fanr.com;        a">
+<meta name="twitter:description" content="首先购买https服务，生成crt和key文件，nginx配置如下server {        listen       443;        server_name blog.i-fanr.com;        index index.html index.htm index.php;        root /usr/share/nginx/blog.i-fanr.com;">
 
   
     <link rel="alternate" href="/atom.xml" title="Write more, Think more" type="application/atom+xml">
@@ -208,16 +208,16 @@
 
   <div class="article-content">
     
-      <p>首先购买https服务，生成crt和key文件，nginx配置如下<br><code><br>server {<br>        listen       443;<br>        server_name www.i-fanr.com;<br>        index index.html index.htm index.php;<br>        root /usr/share/nginx/www.i-fanr.com;<br>        add_header Access-Control-Allow-Origin *;</code></p>
+      <p>首先购买https服务，生成crt和key文件，nginx配置如下<br><code><br>server {<br>        listen       443;<br>        server_name blog.i-fanr.com;<br>        index index.html index.htm index.php;<br>        root /usr/share/nginx/blog.i-fanr.com;<br>        add_header Access-Control-Allow-Origin *;</code></p>
 <pre><code>ssl on;
-ssl_certificate /etc/nginx/ssl/www.i-fanr.com.crt;
-ssl_certificate_key /etc/nginx/ssl/www.i-fanr.com.key;
+ssl_certificate /etc/nginx/ssl/blog.i-fanr.com.crt;
+ssl_certificate_key /etc/nginx/ssl/blog.i-fanr.com.key;
 ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
 ssl_prefer_server_ciphers on;
 ssl_ciphers EECDH+CHACHA20:EECDH+AES128:RSA+AES128:EECDH+AES256:RSA+AES256:EECDH+3DES:RSA+3DES:!MD5;
 
 if ($host = &apos;i-fanr.com&apos;) {
-        rewrite ^/(.*) https://www.i-fanr.com/$1 permanent;
+        rewrite ^/(.*) https://blog.i-fanr.com/$1 permanent;
 }
 
 if ($request_filename !~ (ico|js|css|img|fonts|downloads|helps|robots\.txt|index\.php)) {
@@ -226,7 +226,7 @@ if ($request_filename !~ (ico|js|css|img|fonts|downloads|helps|robots\.txt|index
 }
 
 location ~ \.php {
-        root /usr/share/nginx/www.i-fanr.com;
+        root /usr/share/nginx/blog.i-fanr.com;
         fastcgi_pass   127.0.0.1:9000;
         fastcgi_index  index.php;
         set $path_info &quot;&quot;;
@@ -368,7 +368,7 @@ location ~ \.php {
     
   <section class="duoshuo-comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="" data-title="为网站增加https访问" data-url="http://www.i-fanr.com/2014/09/12/site-https/index.html"></div>
+    <div class="ds-thread" data-thread-key="" data-title="为网站增加https访问" data-url="http://blog.i-fanr.com/2014/09/12/site-https/index.html"></div>
     <!-- 多说评论框 end -->
   </section>
 
