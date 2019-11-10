@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.i-fanr.com/"/>
-  <updated>2019-03-10T15:43:13.376Z</updated>
+  <updated>2019-11-10T03:20:21.248Z</updated>
   <id>http://blog.i-fanr.com/</id>
   
   <author>
@@ -14,6 +14,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>读《代码整洁之道》的一些零散想法</title>
+    <link href="http://blog.i-fanr.com/2019/08/31/code-think/"/>
+    <id>http://blog.i-fanr.com/2019/08/31/code-think/</id>
+    <published>2019-08-31T05:15:10.000Z</published>
+    <updated>2019-11-10T03:20:21.248Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近写代码好像更多的时候在想怎么写出更简洁更高效的代码，之前看过一种说法，写代码的几个层次和阶段，先是能写，拼拼凑凑实现功能先，以函数写法为主，程序由一个个函数组成，函数间相互调用；其次是追求更好的写法，比如面向对象，同一类的问题可以更抽象，高效；再次是可以玩一些更高级的写法比如函数式，更加锻炼程序员的思维，完全颠覆正常的程序思维。</p>
+<p>为什么要强调代码的整洁，里面提到了，其实我们大部分的时间都是在阅读代码，真正写代码的可能就是那一会儿。而且你写的代码可能是一个团队去维护，你得让你接手的人更容易上手去修改你的代码，反正代码的易读性你早晚有一天会意识到它的重要性。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近写代码好像更多的时候在想怎么写出更简洁更高效的代码，之前看过一种说法，写代码的几个层次和阶段，先是能写，拼拼凑凑实现功能先，以函数写法为主，程序由一个个函数组成，函数间相互调用；其次是追求更好的写法，比如面向对象，同一类的问题可以更抽象，高效；再次是可以玩一些更高级的写
+    
+    </summary>
+    
+      <category term="感悟" scheme="http://blog.i-fanr.com/categories/%E6%84%9F%E6%82%9F/"/>
+    
+    
+      <category term="总结" scheme="http://blog.i-fanr.com/tags/%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
   
   <entry>
     <title>学会如何问问题，建立高效沟通</title>
@@ -99,7 +123,7 @@
     <link href="http://blog.i-fanr.com/2018/01/01/hi2018/"/>
     <id>http://blog.i-fanr.com/2018/01/01/hi2018/</id>
     <published>2018-01-01T03:32:59.000Z</published>
-    <updated>2018-01-23T11:57:23.074Z</updated>
+    <updated>2018-01-23T11:57:23.075Z</updated>
     
     <content type="html"><![CDATA[<p>笑来老师的2017总结为我们讲了以下几点：</p>
 <ol>
@@ -145,7 +169,7 @@
     <link href="http://blog.i-fanr.com/2017/12/06/minapp-call/"/>
     <id>http://blog.i-fanr.com/2017/12/06/minapp-call/</id>
     <published>2017-12-06T06:20:25.000Z</published>
-    <updated>2017-12-06T09:54:58.749Z</updated>
+    <updated>2017-12-06T09:54:58.750Z</updated>
     
     <content type="html"><![CDATA[<p>继之前写的一篇文章”如何用wordpress作为后端快速开发一个小程序“，做了一款科技资讯和话题讨论的小程序，对小程序的开发工作基本有了个了解，概括下来，有以下几点：</p>
 <ol>
@@ -630,37 +654,6 @@
     
     
       <category term="生活感悟" scheme="http://blog.i-fanr.com/tags/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>内向型人与外向型人</title>
-    <link href="http://blog.i-fanr.com/2016/10/21/people-character/"/>
-    <id>http://blog.i-fanr.com/2016/10/21/people-character/</id>
-    <published>2016-10-21T08:55:59.000Z</published>
-    <updated>2016-11-19T09:11:30.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>One One In 21th Oct </p>
-<p>内向型人与外向型人：</p>
-<p>我曾经是这样定义内向人跟外向人的，内向就是不善言辞，骨子里偏安静的人；外向人就是特别能说，与人交往很快就能和大伙打成一片，有一种天生的自来熟的人；两种人好像有着天然的区别，生活在两种不同的频道。</p>
-<p>曾经在自己的性格上百般纠结，自己的性格本应该属于内向型的，可是却觉得外向的人百般的好，每当一群人聚在一起，互相热火朝天的的交流着，就感觉的浑身不舒服，为什么自己不是外向型的人？</p>
-<p>今天和平哥交流有了新的认识，其实这两种人没有天然的区别，只是它们从外界获取能量的方式不一样而已，也没有必要去判断哪种人好？如果你是内向型的人，那你就做内向型的人，这是你舒服的状态，你没有必要扭曲自己去适应一种可能并不让你觉得舒服的状态。真正强大的人必是内心强大的人，能够构建自己世界的人。外界的因素很难影响到他。</p>
-<p>内向型的人好像时刻处于一种很冷静的状态，其实如果你把心思聚集在事情的本身，两种人哪种人更容易成事是没法断定的。静与动只是他们存在这个空间的两种表象，只有做到时刻丰富自己的内心，增强自己的实力，你才能对外界游刃有余。</p>
-<p>人活在世上，可能有件事是必须要做的，精神上追求自我，能力上不断超越自我！</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;One One In 21th Oct &lt;/p&gt;
-&lt;p&gt;内向型人与外向型人：&lt;/p&gt;
-&lt;p&gt;我曾经是这样定义内向人跟外向人的，内向就是不善言辞，骨子里偏安静的人；外向人就是特别能说，与人交往很快就能和大伙打成一片，有一种天生的自来熟的人；两种人好像有着天然的区别，生活在两种
-    
-    </summary>
-    
-      <category term="生活感悟" scheme="http://blog.i-fanr.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
-    
-    
-      <category term="性格" scheme="http://blog.i-fanr.com/tags/%E6%80%A7%E6%A0%BC/"/>
     
   </entry>
   
