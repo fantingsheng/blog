@@ -181,7 +181,7 @@
     <link href="http://blog.i-fanr.com/2018/01/01/hi2018/"/>
     <id>http://blog.i-fanr.com/2018/01/01/hi2018/</id>
     <published>2018-01-01T03:32:59.000Z</published>
-    <updated>2018-01-23T11:57:23.075Z</updated>
+    <updated>2020-01-15T10:39:15.382Z</updated>
     
     <content type="html"><![CDATA[<p>笑来老师的2017总结为我们讲了以下几点：</p>
 <ol>
@@ -277,7 +277,7 @@
     <link href="http://blog.i-fanr.com/2017/11/06/minapps/"/>
     <id>http://blog.i-fanr.com/2017/11/06/minapps/</id>
     <published>2017-11-06T08:17:00.000Z</published>
-    <updated>2017-11-06T08:31:02.000Z</updated>
+    <updated>2020-01-15T10:40:13.508Z</updated>
     
     <content type="html"><![CDATA[<p>小程序自从开放出来，一直处于要火不火的状态，但是企业也把应用的小程序开发作为除WEB端，iOS端，安卓端三端之外的另一个必不可少的平台。随着小程序开放的能力越来越多，小程序所实现的应用能力也越来越强。</p>
 <p>正好公司需要做一个类似于社区讨论的小程序，初次接触小程序开发，被后端开发难住了，虽然会点PHP，但是如果全部自己开发，那个工作量还是不小的。于是想这个现成的后端方案，前端设计提供设计稿，开发下倒不是难事。Github还真是开源界的万能朋友圈啊，有人用wordpress提供的查询接口和自己开发插件提供的提交评论点赞接口，全了！</p>
@@ -306,7 +306,7 @@
       <category term="技术" scheme="http://blog.i-fanr.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="wordpress,小程序" scheme="http://blog.i-fanr.com/tags/wordpress-%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+      <category term="wordpress, 小程序" scheme="http://blog.i-fanr.com/tags/wordpress-%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
   </entry>
   
@@ -315,7 +315,7 @@
     <link href="http://blog.i-fanr.com/2017/09/03/mailhost/"/>
     <id>http://blog.i-fanr.com/2017/09/03/mailhost/</id>
     <published>2017-09-03T15:17:00.000Z</published>
-    <updated>2017-11-06T08:28:42.000Z</updated>
+    <updated>2020-01-15T10:40:06.898Z</updated>
     
     <content type="html"><![CDATA[<p>在开发中经常会改本机的host去区分线上和线下的环境，导致一个什么问题呢？浏览器的缓存，不能立马生效，使用chrome尤为严重。频繁的改不仅麻烦还不生效，这就是我之前一直苦恼的问题。后来查找有没有相关的解决办法。相信一点，没有什么能够难倒程序员。果真有大神针对此问题，开发了一款软件multiple-host的软件，附上github上的项目开源地址 <a href="https://github.com/liyangready/multiple-host" target="_blank" rel="external">https://github.com/liyangready/multiple-host</a></p>
 <p>软件简洁好用，只要在配置里填写相应的host映射，然后启动你喜欢的浏览器，打开就是一个独立的虚拟的环境，完全区别于线上的，你打开电脑上的浏览器就可以实现线上和线下的两套环境进行开发调试。</p>
@@ -337,7 +337,7 @@
       <category term="技术" scheme="http://blog.i-fanr.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="issues,开发" scheme="http://blog.i-fanr.com/tags/issues-%E5%BC%80%E5%8F%91/"/>
+      <category term="issues, 开发" scheme="http://blog.i-fanr.com/tags/issues-%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   
@@ -346,7 +346,7 @@
     <link href="http://blog.i-fanr.com/2017/08/04/wordpress-for-bbs/"/>
     <id>http://blog.i-fanr.com/2017/08/04/wordpress-for-bbs/</id>
     <published>2017-08-04T02:20:25.000Z</published>
-    <updated>2017-08-04T02:47:09.000Z</updated>
+    <updated>2020-01-15T10:40:30.948Z</updated>
     
     <content type="html"><![CDATA[<p>Wordpress一款闻名全球的PHP博客系统，维基百科上记录“Alexa排行前100万的网站中有超过16.7%的网站使用WordPress。到了2011年8月，约22%的新网站采用了WordPress。WordPress是目前因特网上最流行的博客系统”，获得广大开发者的支持，丰富的插件和主题是它的一大特色之一。</p>
 <p>从大学到现在，这几年前前后后折腾了不少Wordpress站点。从博客，商城，官网，到资讯网站，wordpress横跨整个互联网应用。商城有很强的<a href="https://woocommerce.com/" target="_blank" rel="external">Woocommerce</a>插件，能够实现一般商城的所有功能.今天又发现它还可以实现论坛功能的插件<a href="https://bbpress.org/forums/topic/bbpress-2-6-beta/" target="_blank" rel="external">bbPress</a>,是不是很兴奋。</p>
@@ -363,7 +363,7 @@
       <category term="技术" scheme="http://blog.i-fanr.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="Wordpress,bbPress,插件" scheme="http://blog.i-fanr.com/tags/Wordpress-bbPress-%E6%8F%92%E4%BB%B6/"/>
+      <category term="Wordpress, bbPress, 插件" scheme="http://blog.i-fanr.com/tags/Wordpress-bbPress-%E6%8F%92%E4%BB%B6/"/>
     
   </entry>
   
@@ -549,7 +549,7 @@
     <link href="http://blog.i-fanr.com/2017/01/05/hi2017/"/>
     <id>http://blog.i-fanr.com/2017/01/05/hi2017/</id>
     <published>2017-01-05T15:15:10.000Z</published>
-    <updated>2017-01-05T16:26:33.000Z</updated>
+    <updated>2020-01-15T10:39:09.268Z</updated>
     
     <content type="html"><![CDATA[<p>读了七年就是一辈子，从毕业2014年毕业算，到2017年也快要过了半辈子了。突然觉得一辈子好快，如果你没有清晰的目标，有没有充分的去规划每一天，一切就如过眼云烟。匆匆的上路，还没等缓过神来，就结束了。如果这真的是生命的结束，那就太可惜了！</p>
 <p>还好，你将生命等分成了几辈子，这样错过一辈子，倒不至于连后悔的机会都没有。七年，足够你去定下一个不大不小的目标，然后朝着它不断地努力去实现。时间改变我们的不应该只是容颜的改变，更应该是心智和精神的不断升华，和一段段生命的感悟。每过一个七年，我们就可以重新定义一次生命，重新回到起点，向着下一个人生目标奔去。其实这个起点亦是上一个一辈子的终点，我们匆匆忙忙总结完，立刻披荆斩棘地上路。发现作者这样把七年定为一辈子很合理。</p>
@@ -566,7 +566,7 @@
       <category term="生活感悟" scheme="http://blog.i-fanr.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
     
     
-      <category term="你好，2017" scheme="http://blog.i-fanr.com/tags/%E4%BD%A0%E5%A5%BD%EF%BC%8C2017/"/>
+      <category term="新年" scheme="http://blog.i-fanr.com/tags/%E6%96%B0%E5%B9%B4/"/>
     
   </entry>
   
@@ -605,7 +605,7 @@
     <link href="http://blog.i-fanr.com/2016/12/18/holiday-caffee/"/>
     <id>http://blog.i-fanr.com/2016/12/18/holiday-caffee/</id>
     <published>2016-12-18T03:26:12.000Z</published>
-    <updated>2016-12-18T05:29:19.000Z</updated>
+    <updated>2020-01-15T10:39:46.619Z</updated>
     
     <content type="html"><![CDATA[<p>今年的冬天无锡的天气异常的暖和，艳阳高照的周末，起来吃了早饭，背上电脑，乘上118和往常上班一样，但是却有着与上班不一样的心境，很轻松，心情自然不一样，也许是因为这样的天气😊，找了软件园旁边的3W咖啡（一个坐落在荷塘边上，优美清静的咖啡厅，四周都是玻璃窗，阳光可以透过玻璃橱窗照进来），可选择室内靠窗子的沙发，亦可选择外面的走廊，呼吸大自然的空气，直接感受阳光照在身上的温暖，点一杯咖啡开始了一天的码字生活。</p>
 <p><img src="/images/IMG_20161218_110559R.jpg"></p>
@@ -624,9 +624,7 @@
       <category term="生活感悟" scheme="http://blog.i-fanr.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
     
     
-      <category term="Coffee" scheme="http://blog.i-fanr.com/tags/Coffee/"/>
-    
-      <category term="Coding" scheme="http://blog.i-fanr.com/tags/Coding/"/>
+      <category term="Coffee, Coding" scheme="http://blog.i-fanr.com/tags/Coffee-Coding/"/>
     
   </entry>
   
