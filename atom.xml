@@ -78,7 +78,7 @@
     <link href="http://blog.i-fanr.com/2019/08/31/code-think/"/>
     <id>http://blog.i-fanr.com/2019/08/31/code-think/</id>
     <published>2019-08-31T05:15:10.000Z</published>
-    <updated>2019-11-10T03:23:32.278Z</updated>
+    <updated>2020-01-15T10:56:45.947Z</updated>
     
     <content type="html"><![CDATA[<p>最近写代码好像更多的时候在想怎么写出更简洁更高效的代码，之前看过一种说法，写代码的几个层次和阶段，先是能写，拼拼凑凑实现功能先，以函数写法为主，程序由一个个函数组成，函数间相互调用；其次是追求更好的写法，比如面向对象，同一类的问题可以更抽象，高效；再次是可以玩一些更高级的写法比如函数式，更加锻炼程序员的思维，完全颠覆正常的程序思维。</p>
 <p>为什么要强调代码的整洁，里面提到了，其实我们大部分的时间都是在阅读代码，真正写代码的可能就是那一会儿。而且你写的代码可能是一个团队去维护，你得让你接手的人更容易上手去修改你的代码，反正代码的易读性你早晚有一天会意识到它的重要性。</p>
@@ -102,7 +102,7 @@
     <link href="http://blog.i-fanr.com/2019/03/10/learn-ask-question/"/>
     <id>http://blog.i-fanr.com/2019/03/10/learn-ask-question/</id>
     <published>2019-03-10T03:08:00.000Z</published>
-    <updated>2019-03-10T15:43:13.376Z</updated>
+    <updated>2020-01-15T10:55:11.048Z</updated>
     
     <content type="html"><![CDATA[<p>今天问一个同事问题，结果零散的几条聊天记录过去，人家愣是没有get到你的意思，对方来了句“把话说清楚，痛快点”。明明一句话能够说清楚的问题，分成几段去说，而且惜字如金，几句话根本连贯不起来，通常是让被问到人一头雾水，脾气好的人可能反过来继续追问下，脾气不好的简直火冒三丈，说你这个人到底会不会说话。</p>
 <p>其实提问题是有技巧的，通过一句话把问题概括清楚，说明事情的缘由，以及相关的人和事，需要的话还要带上时间地点。随着网络的发达，沟通的成本越来越低，在没有电话的时候通过书信来传话，如果你不把事情说清楚，一封信在路上少说也要个把星期，这样的沟通成本太大了，然后有了电话和短信，时间不再是沟通的决定性成本了，但是话费也挺贵的，一个短信一毛钱，如果你问一个问题不简单把事情描述清楚的话，一来二去可以算算成本，这样逼着没办法你也得琢磨如果去把一件事情跟对方描述清楚，尽量避免对方有反问的机会。但是，如今的流量时代，社交软件使得沟通的成本越来越低，沟通的成本几乎为零了。伴随着每天的垃圾信息，我们在手机上花费的时间越来越多，好像对沟通成本这回事已经淡忘。其实沟通除了金钱上的成本，还有时间上的成本。</p>
@@ -128,7 +128,7 @@
     <link href="http://blog.i-fanr.com/2019/01/01/backs2018/"/>
     <id>http://blog.i-fanr.com/2019/01/01/backs2018/</id>
     <published>2019-01-01T15:15:10.000Z</published>
-    <updated>2019-01-01T17:14:28.135Z</updated>
+    <updated>2020-01-15T10:56:47.912Z</updated>
     
     <content type="html"><![CDATA[<p>在2019到来之际，想回忆下整个2018的经历：</p>
 <p>首先谈谈生活上的，年初完成了人生的一件大事，结束了和老婆长达六年的的恋爱长跑，正式的步入了婚姻的生活。虽然婚后的生活简单宁静，但是确实如此的真实，除了工作的忙碌便是两个人的相互陪伴。年中的时候五六月份完成了一次简单的蜜月旅行。这一年便哪里也没有去了。工作、生活，简单的两点一线。</p>
@@ -156,7 +156,7 @@
     <link href="http://blog.i-fanr.com/2018/11/24/vueconf2018/"/>
     <id>http://blog.i-fanr.com/2018/11/24/vueconf2018/</id>
     <published>2018-11-24T00:15:00.000Z</published>
-    <updated>2018-12-15T05:48:14.842Z</updated>
+    <updated>2020-01-15T10:53:12.793Z</updated>
     
     <content type="html"><![CDATA[<p>行业的开发者大会也见了不少了，有的是抱着分享干货去的，有的是抱着认识行业大佬去的，也有的是刷在行业的存在感去的，总之大家各有所取，从全国各地相聚一起。我觉得总体的氛围还是不错的。</p>
 <p>这次的大会所围绕的话题还是比较明确的，就是前端开发Vue语言，也可以叫做框架吧，会议邀请了该语言的创始人之一的尤雨溪，开场给我们展望了3.0版本所带来的升级与一些新的特性，接着各路大咖纷纷分享了工作中使用Vue的一些技术与心得。对于工作在二线城市的开发者，在本城市很难有这种技术分享会的机会，每次去杭州上海参加行业大会，都会有不一样的心得，深切感受能在某一个行业努力深耕然后将自己所学所悟同同行交流分享的时候，所带来的那种幸运与满足感。</p>
@@ -174,6 +174,8 @@
       <category term="Vue" scheme="http://blog.i-fanr.com/categories/Vue/"/>
     
     
+      <category term="Vue" scheme="http://blog.i-fanr.com/tags/Vue/"/>
+    
   </entry>
   
   <entry>
@@ -181,7 +183,7 @@
     <link href="http://blog.i-fanr.com/2018/01/01/hi2018/"/>
     <id>http://blog.i-fanr.com/2018/01/01/hi2018/</id>
     <published>2018-01-01T03:32:59.000Z</published>
-    <updated>2020-01-15T10:39:15.382Z</updated>
+    <updated>2020-01-15T10:55:24.109Z</updated>
     
     <content type="html"><![CDATA[<p>笑来老师的2017总结为我们讲了以下几点：</p>
 <ol>
@@ -227,7 +229,7 @@
     <link href="http://blog.i-fanr.com/2017/12/06/minapp-call/"/>
     <id>http://blog.i-fanr.com/2017/12/06/minapp-call/</id>
     <published>2017-12-06T06:20:25.000Z</published>
-    <updated>2017-12-06T09:54:58.750Z</updated>
+    <updated>2020-01-15T10:55:00.302Z</updated>
     
     <content type="html"><![CDATA[<p>继之前写的一篇文章”如何用wordpress作为后端快速开发一个小程序“，做了一款科技资讯和话题讨论的小程序，对小程序的开发工作基本有了个了解，概括下来，有以下几点：</p>
 <ol>
@@ -277,7 +279,7 @@
     <link href="http://blog.i-fanr.com/2017/11/06/minapps/"/>
     <id>http://blog.i-fanr.com/2017/11/06/minapps/</id>
     <published>2017-11-06T08:17:00.000Z</published>
-    <updated>2020-01-15T10:44:34.160Z</updated>
+    <updated>2020-01-15T10:51:47.052Z</updated>
     
     <content type="html"><![CDATA[<p>小程序自从开放出来，一直处于要火不火的状态，但是企业也把应用的小程序开发作为除WEB端，iOS端，安卓端三端之外的另一个必不可少的平台。随着小程序开放的能力越来越多，小程序所实现的应用能力也越来越强。</p>
 <p>正好公司需要做一个类似于社区讨论的小程序，初次接触小程序开发，被后端开发难住了，虽然会点PHP，但是如果全部自己开发，那个工作量还是不小的。于是想这个现成的后端方案，前端设计提供设计稿，开发下倒不是难事。Github还真是开源界的万能朋友圈啊，有人用wordpress提供的查询接口和自己开发插件提供的提交评论点赞接口，全了！</p>
@@ -308,7 +310,7 @@
     
       <category term="小程序" scheme="http://blog.i-fanr.com/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
-      <category term="插件wordpress" scheme="http://blog.i-fanr.com/tags/%E6%8F%92%E4%BB%B6wordpress/"/>
+      <category term="wordpress" scheme="http://blog.i-fanr.com/tags/wordpress/"/>
     
   </entry>
   
@@ -350,7 +352,7 @@
     <link href="http://blog.i-fanr.com/2017/08/04/wordpress-for-bbs/"/>
     <id>http://blog.i-fanr.com/2017/08/04/wordpress-for-bbs/</id>
     <published>2017-08-04T02:20:25.000Z</published>
-    <updated>2020-01-15T10:44:08.073Z</updated>
+    <updated>2020-01-15T10:52:55.770Z</updated>
     
     <content type="html"><![CDATA[<p>Wordpress一款闻名全球的PHP博客系统，维基百科上记录“Alexa排行前100万的网站中有超过16.7%的网站使用WordPress。到了2011年8月，约22%的新网站采用了WordPress。WordPress是目前因特网上最流行的博客系统”，获得广大开发者的支持，丰富的插件和主题是它的一大特色之一。</p>
 <p>从大学到现在，这几年前前后后折腾了不少Wordpress站点。从博客，商城，官网，到资讯网站，wordpress横跨整个互联网应用。商城有很强的<a href="https://woocommerce.com/" target="_blank" rel="external">Woocommerce</a>插件，能够实现一般商城的所有功能.今天又发现它还可以实现论坛功能的插件<a href="https://bbpress.org/forums/topic/bbpress-2-6-beta/" target="_blank" rel="external">bbPress</a>,是不是很兴奋。</p>
@@ -380,7 +382,7 @@
     <link href="http://blog.i-fanr.com/2017/07/29/tecnolegy/"/>
     <id>http://blog.i-fanr.com/2017/07/29/tecnolegy/</id>
     <published>2017-07-29T08:32:59.000Z</published>
-    <updated>2017-07-30T08:01:38.000Z</updated>
+    <updated>2020-01-15T10:53:21.938Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>重造轮子是重新创造一个已有的或是已被其他人优化的基本方法。</p>
@@ -433,7 +435,7 @@
     <link href="http://blog.i-fanr.com/2017/05/26/frontend-best/"/>
     <id>http://blog.i-fanr.com/2017/05/26/frontend-best/</id>
     <published>2017-05-26T11:04:00.000Z</published>
-    <updated>2017-05-26T11:30:22.000Z</updated>
+    <updated>2020-01-15T10:55:38.192Z</updated>
     
     <content type="html"><![CDATA[<p>今天看到Vue Js创始人，尤雨溪，知乎上slogon是这样写的“不会搞艺术的程序员不是好设计师”。设计出生的他，还能在软件开发上有这么深的造诣，简直了！所谓牛人干什么都那么牛，终于相信了。</p>
 <p>他的博客首页风格简约，透着大气，click产生的彩带动效，很具设计师的气质。<code>Design, Code &amp; Things in Between</code>游走于代码和设计之间的大神，何尝不是我的追求。</p>
@@ -462,7 +464,7 @@
     <link href="http://blog.i-fanr.com/2017/04/11/fdconf2017/"/>
     <id>http://blog.i-fanr.com/2017/04/11/fdconf2017/</id>
     <published>2017-04-11T12:36:11.000Z</published>
-    <updated>2017-07-29T08:38:19.000Z</updated>
+    <updated>2020-01-15T10:56:01.117Z</updated>
     
     <content type="html"><![CDATA[<p>一年一度的前端开发者大会，在上海浦东举行，交了学费（门票收了¥180），一早坐着动车从无锡出发，赶在8:30到达目的地，尽管按时到达，还在抱怨为什么一个大会搞的那么早。</p>
 <p>其实后来想想，开始的早是没有错的，为了合理的安排下午的演讲，不至于拖到很晚的时间结束。大会是由一个叫Topgeek的社群组织的，通过收取一定的门票，来组织一场公益性质的技术分享会。有人可能觉得这样的分享会为什么要收费，是这些技术大牛要通过这个转取外快。为什么不能做点公益呢！可是你想，这样一个大会一般选在酒店，场地费要吧，期间休息时间还提供茶歇，零食饮料啥的。人家总不会这个自己掏腰包，组织一个环境和服务还可以的大会。其实一想，越有逼格越有干货的大会，一般都是要收门票的，只多不少，是有一定道理的。整场下来，还是收获不少的。</p>
@@ -489,7 +491,7 @@
     <link href="http://blog.i-fanr.com/2017/03/02/do-more-better-than-last-time/"/>
     <id>http://blog.i-fanr.com/2017/03/02/do-more-better-than-last-time/</id>
     <published>2017-03-02T03:16:07.000Z</published>
-    <updated>2017-03-02T03:51:13.000Z</updated>
+    <updated>2020-01-15T10:56:30.318Z</updated>
     
     <content type="html"><![CDATA[<p>今天受平哥的点播，才发现自己一直以来做事都是完成了就OK了，长期这样是很难让自己得到提高的，会让自己在一个常态的圈子里循环。尤其在负责很多零散的项目的时候，会让自己太过注重效率而忽视做事的精度。做出来的东西要让人有一种惊艳的感觉！比理想中要好那么一点，不仅自己的自信多了，而且“审美”的能力有所提高。这样才能让自己慢慢提高。</p>
 <p>在方法上，他教会了我一点，如何让自己发现做的东西比实际做出来的要好，就是你要这样想，比如你买个四五十块钱的键盘和一个一两百的，你去摸索发现他们之间的差别，在发现的过程中，有助于提高你的认知水平，间接你在做东西的时候，如何去做会比自己平常做出来的东西要好，这应该就是一个产品经理应该有的素质吧。</p>
@@ -507,6 +509,8 @@
       <category term="生活感悟" scheme="http://blog.i-fanr.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
     
     
+      <category term="感悟" scheme="http://blog.i-fanr.com/tags/%E6%84%9F%E6%82%9F/"/>
+    
   </entry>
   
   <entry>
@@ -514,7 +518,7 @@
     <link href="http://blog.i-fanr.com/2017/02/11/sendcloud-guide/"/>
     <id>http://blog.i-fanr.com/2017/02/11/sendcloud-guide/</id>
     <published>2017-02-11T06:44:06.000Z</published>
-    <updated>2017-02-11T06:46:55.000Z</updated>
+    <updated>2020-01-15T10:52:44.315Z</updated>
     
     <content type="html"><![CDATA[<h3 id="SendCloud-邮件发送系统注意事项"><a href="#SendCloud-邮件发送系统注意事项" class="headerlink" title="SendCloud 邮件发送系统注意事项"></a>SendCloud 邮件发送系统注意事项</h3><h4 id="1-去掉代发的显示：保证发信域名和发信人地址一致，腾讯邮箱接收不再显示代发的方法：代码中将from参数写成xxx-your-domain-com-your-domain-com-代表相应API-USER发信域名"><a href="#1-去掉代发的显示：保证发信域名和发信人地址一致，腾讯邮箱接收不再显示代发的方法：代码中将from参数写成xxx-your-domain-com-your-domain-com-代表相应API-USER发信域名" class="headerlink" title="1. 去掉代发的显示：保证发信域名和发信人地址一致，腾讯邮箱接收不再显示代发的方法：代码中将from参数写成xxx@your.domain.com  your.domain.com 代表相应API_USER发信域名"></a>1. 去掉代发的显示：保证发信域名和发信人地址一致，腾讯邮箱接收不再显示代发的方法：代码中将from参数写成xxx@your.domain.com  your.domain.com 代表相应API_USER发信域名</h4><h4 id="2-付费用户可以去掉邮件底部取消订阅按钮"><a href="#2-付费用户可以去掉邮件底部取消订阅按钮" class="headerlink" title="2. 付费用户可以去掉邮件底部取消订阅按钮"></a>2. 付费用户可以去掉邮件底部取消订阅按钮</h4><h4 id="3-垃圾邮件防止策略，域名预热白皮书"><a href="#3-垃圾邮件防止策略，域名预热白皮书" class="headerlink" title="3. 垃圾邮件防止策略，域名预热白皮书"></a>3. 垃圾邮件防止策略，域名预热白皮书</h4><pre><code>1. 邮件进垃圾箱跟用户发信内容、发信域名评分、IP质量等情况息息相关，SendCloud密切关注着IP的备案情况和评分情况，以保证提供优质的IP供用户发信。当出现邮件进垃圾箱时，如果是触发邮件，SendCloud可以协助用户进行申诉；如果是批量邮件，SendCloud可以提供内容或者发信行为的调整意见
 </code></pre><h4 id="4-无效邮件包括："><a href="#4-无效邮件包括：" class="headerlink" title="4. 无效邮件包括："></a>4. 无效邮件包括：</h4><pre><code>1. 收件人在sendcloud黑名单中
@@ -548,7 +552,9 @@
       <category term="技术" scheme="http://blog.i-fanr.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="SendCloud,邮件" scheme="http://blog.i-fanr.com/tags/SendCloud-%E9%82%AE%E4%BB%B6/"/>
+      <category term="SendCloud" scheme="http://blog.i-fanr.com/tags/SendCloud/"/>
+    
+      <category term="邮件" scheme="http://blog.i-fanr.com/tags/%E9%82%AE%E4%BB%B6/"/>
     
   </entry>
   
@@ -557,7 +563,7 @@
     <link href="http://blog.i-fanr.com/2017/01/05/hi2017/"/>
     <id>http://blog.i-fanr.com/2017/01/05/hi2017/</id>
     <published>2017-01-05T15:15:10.000Z</published>
-    <updated>2020-01-15T10:39:09.268Z</updated>
+    <updated>2020-01-15T10:55:31.805Z</updated>
     
     <content type="html"><![CDATA[<p>读了七年就是一辈子，从毕业2014年毕业算，到2017年也快要过了半辈子了。突然觉得一辈子好快，如果你没有清晰的目标，有没有充分的去规划每一天，一切就如过眼云烟。匆匆的上路，还没等缓过神来，就结束了。如果这真的是生命的结束，那就太可惜了！</p>
 <p>还好，你将生命等分成了几辈子，这样错过一辈子，倒不至于连后悔的机会都没有。七年，足够你去定下一个不大不小的目标，然后朝着它不断地努力去实现。时间改变我们的不应该只是容颜的改变，更应该是心智和精神的不断升华，和一段段生命的感悟。每过一个七年，我们就可以重新定义一次生命，重新回到起点，向着下一个人生目标奔去。其实这个起点亦是上一个一辈子的终点，我们匆匆忙忙总结完，立刻披荆斩棘地上路。发现作者这样把七年定为一辈子很合理。</p>
@@ -583,7 +589,7 @@
     <link href="http://blog.i-fanr.com/2016/12/20/friend-width-life/"/>
     <id>http://blog.i-fanr.com/2016/12/20/friend-width-life/</id>
     <published>2016-12-20T02:29:47.000Z</published>
-    <updated>2016-12-20T03:31:38.000Z</updated>
+    <updated>2020-01-15T10:55:47.479Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/lixiaolai.jpg"></p>
 <p>在公司老大的影响下，他说他是笑来粉，听了他几次公司周五的分享会，感觉自己慢慢认同他的一些观点。然后下来自己也看了李笑来写的新生大学，确实一些价值观和生活态度影响了我，与一些名人自传有很大的不同，上来免不了一堆的成功学和方法论。将的让你很容易接受，更多的可能在先摆事实，然后将他的一些经验。毕竟人家也不是空谈，年轻的时候也没有折腾，确实干了很多事，也干成了很多事。</p>
@@ -643,7 +649,7 @@
     <link href="http://blog.i-fanr.com/2016/12/05/front-end-developer/"/>
     <id>http://blog.i-fanr.com/2016/12/05/front-end-developer/</id>
     <published>2016-12-05T11:29:04.000Z</published>
-    <updated>2016-12-05T12:03:10.000Z</updated>
+    <updated>2020-01-15T10:55:44.488Z</updated>
     
     <content type="html"><![CDATA[<p>今天看到一个很酷的博客，博主是微信前端工程师，一个人3个月完成V3主题PC端、移动端交互原型、网页重构、功能开发、工具一键上线。主题的更新，对整站进行优化，主要包括设计改版、性能优化、体验优化。马德，这是一个人干的活吗？“不会设计的重构不是好的前端工程师”这是人家说的话。瞬间觉得自己根本不是前端，离大厂的工程师差的十万八千里。</p>
 <p>博客的前端各种动效狂拽酷炫屌炸天，而且性能，体验也考虑的十分全面，反正就是所谓的专业素养吧！你能想到的他都想到了，想不到的他也想到了，一个人能够把自己的博客拾掇的这么完美，人长得肯定也不错！可是没有找到相片。贴下博客的链接<code><a href="http://www.xuanfengge.com/" target="_blank" rel="external">http://www.xuanfengge.com/</a></code></p>
