@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+
+
+  <html class="light page-post">
+
+
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>如何用wordpress作为后端快速开发一个小程序 | Write more, Think more</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="小程序,wordpress,">
+  
+
+  <meta name="description" content="小程序自从开放出来，一直处于要火不火的状态，但是企业也把应用的小程序开发作为除WEB端，iOS端，安卓端三端之外的另一个必不可少的平台。随着小程序开放的能力越来越多，小程序所实现的应用能力也越来越强。 正好公司需要做一个类似于社区讨论的小程序，初次接触小程序开发，被后端开发难住了，虽然会点PHP，但是如果全部自己开发，那个工作量还是不小的。于是想这个现成的后端方案，前端设计提供设计稿，开发下倒不是">
+<meta name="keywords" content="小程序,wordpress">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何用wordpress作为后端快速开发一个小程序">
+<meta property="og:url" content="http://blog.i-fanr.com/2017/11/06/minapps/index.html">
+<meta property="og:site_name" content="Write more, Think more">
+<meta property="og:description" content="小程序自从开放出来，一直处于要火不火的状态，但是企业也把应用的小程序开发作为除WEB端，iOS端，安卓端三端之外的另一个必不可少的平台。随着小程序开放的能力越来越多，小程序所实现的应用能力也越来越强。 正好公司需要做一个类似于社区讨论的小程序，初次接触小程序开发，被后端开发难住了，虽然会点PHP，但是如果全部自己开发，那个工作量还是不小的。于是想这个现成的后端方案，前端设计提供设计稿，开发下倒不是">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://blog.i-fanr.com/images/minapp1.jpg">
+<meta property="og:image" content="http://blog.i-fanr.com/images/minapp2.jpg">
+<meta property="og:image" content="http://blog.i-fanr.com/images/minapp3.jpg">
+<meta property="og:updated_time" content="2020-01-15T10:51:47.052Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="如何用wordpress作为后端快速开发一个小程序">
+<meta name="twitter:description" content="小程序自从开放出来，一直处于要火不火的状态，但是企业也把应用的小程序开发作为除WEB端，iOS端，安卓端三端之外的另一个必不可少的平台。随着小程序开放的能力越来越多，小程序所实现的应用能力也越来越强。 正好公司需要做一个类似于社区讨论的小程序，初次接触小程序开发，被后端开发难住了，虽然会点PHP，但是如果全部自己开发，那个工作量还是不小的。于是想这个现成的后端方案，前端设计提供设计稿，开发下倒不是">
+<meta name="twitter:image" content="http://blog.i-fanr.com/images/minapp1.jpg">
+
+  
+    <link rel="alternate" href="/atom.xml" title="Write more, Think more" type="application/atom+xml">
+  
+
+  
+    <link rel="icon" href="/images/favicon.ico">
+  
+
+  <link href="/css/styles.css?v=028c63b1" rel="stylesheet">
+
+
+  
+    <link rel="stylesheet" href="/css/personal-style.css">
+  
+
+  
+
+  
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?adfdc28b1809abcd238ff50a1a364033";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+  
+     <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
+  
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-1398727179052429",
+      enable_page_level_ads: true
+    });
+  </script>
+  
+</head>
+</html>
+<body>
+
+
+  
+    <span id="toolbox-mobile" class="toolbox-mobile">首页</span>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">首页</span>
+      <i class="icon-angle-down"></i>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/archives/"
+            target="_self"
+            >
+            博客
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/category/"
+            target="_self"
+            >
+            分类
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/tag/"
+            target="_self"
+            >
+            标签
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/link/"
+            target="_self"
+            >
+            友链
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/about/"
+            target="_self"
+            >
+            关于
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/atom.xml"
+            target="_blank"
+            >
+            RSS
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/search/"
+            target="_self"
+            >
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-文章列表页和话题列表页"><span class="toc-text">1.文章列表页和话题列表页</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-文章详情页和话题详情页"><span class="toc-text">2.文章详情页和话题详情页</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-我的页面就是你参与的文章和话题页，用tab实现"><span class="toc-text">3.我的页面就是你参与的文章和话题页，用tab实现</span></a></li></ol>
+  </div>
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-minapps" class="article article-type-post" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">如何用wordpress作为后端快速开发一个小程序</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2017.11.06</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>Timfan</span>
+        </span>
+      
+
+      
+  <span class="article-category">
+    <i class="icon-list"></i>
+    <a class="article-category-link" href="/categories/技术/">技术</a>
+  </span>
+
+
+
+      
+
+      
+        <i class="fa fa-eye"></i> 
+          <span id="busuanzi_container_page_pv">
+           &nbsp热度 <span id="busuanzi_value_page_pv">
+            <i class="fa fa-spinner fa-spin"></i></span>℃
+          </span>
+       
+
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <p>小程序自从开放出来，一直处于要火不火的状态，但是企业也把应用的小程序开发作为除WEB端，iOS端，安卓端三端之外的另一个必不可少的平台。随着小程序开放的能力越来越多，小程序所实现的应用能力也越来越强。</p>
+<p>正好公司需要做一个类似于社区讨论的小程序，初次接触小程序开发，被后端开发难住了，虽然会点PHP，但是如果全部自己开发，那个工作量还是不小的。于是想这个现成的后端方案，前端设计提供设计稿，开发下倒不是难事。Github还真是开源界的万能朋友圈啊，有人用wordpress提供的查询接口和自己开发插件提供的提交评论点赞接口，全了！</p>
+<p>接下来有了设计稿就是开发了，作为一个略懂后端的前端程序员，小程序还是很容易上手的，几乎过一遍开发文档就能写了。感觉开发就是朝着一个垒积木的方向在进化着，会不断地向上层去开发，很多东西被封装，不需要你关心，你唯一关心的是业务逻辑，然后用框架所提供的代码块去实现。</p>
+<p>讲下这个小程序功能逻辑，主要三大块</p>
+<h3 id="1-文章列表页和话题列表页"><a href="#1-文章列表页和话题列表页" class="headerlink" title="1.文章列表页和话题列表页"></a>1.文章列表页和话题列表页</h3><center><img src="/images/minapp1.jpg"></center>
+
+<p>在小程序里对应两个page，一个index和一个topic文件夹下包括wxml，wxss，js，json文件。首页包含文章列表和置顶文章slider控件，推荐话题取最热的四个话题，这些都可以用wordpress提供的”/wp-json/wp/v2/“基础api搭配查询参数获取到，话题和文章通过新建不同的category来区分。</p>
+<h3 id="2-文章详情页和话题详情页"><a href="#2-文章详情页和话题详情页" class="headerlink" title="2.文章详情页和话题详情页"></a>2.文章详情页和话题详情页</h3><center><img src="/images/minapp2.jpg"></center>
+
+<p>对应两个page下，detail和tpdetail两个文件夹，这两个页面很多控件相似，我们可以用template把它抽出来，比如评论功能是一样的，在templates文件夹下新建comment.wxml文件。主要引入template的时候，把需要的输入传过去</p>
+<pre><code>&lt;template is=&quot;tempComment&quot; data=&quot;{{commentCount, commentsList, ChildrenCommentsList, display, isLastPage, isNoComment, dialog}}&quot;/&gt;
+</code></pre><p>评论提交功能用开发的一个插件接口实现</p>
+<h3 id="3-我的页面就是你参与的文章和话题页，用tab实现"><a href="#3-我的页面就是你参与的文章和话题页，用tab实现" class="headerlink" title="3.我的页面就是你参与的文章和话题页，用tab实现"></a>3.我的页面就是你参与的文章和话题页，用tab实现</h3><center><img src="/images/minapp3.jpg"></center>
+
+<p>这两个可以用抽出来的common-list.wxml模版，传入列表数据实现。整个下来，一个讨论社区小程序就完成了，接下提交测试体验版本，可以邀请微信好友帮忙内测。</p>
+
+    
+  </div>
+</article>
+
+</div>
+
+
+  <div class="text-center donation">
+    <div class="inner-donation">
+      <span class="btn-donation">支持一下</span>
+      <div class="donation-body">
+        <div class="tip text-center">扫一扫，支持Timfan</div>
+        <ul class="theme.donation.items.length">
+        
+          <li class="item">
+            <img src="/images/qr-wechat.png" alt="">
+          </li>
+        
+          <li class="item">
+            <img src="/images/qr-alipay.jpg" alt="">
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal">
+  <span id="cover" class="cover hide"></span>
+  <div id="modal-dialog" class="modal-dialog hide-dialog">
+    <div class="modal-header">
+      <span id="close" class="btn-close">关闭</span>
+    </div>
+    <hr>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/archives/"
+              target="_self"
+              >
+              博客
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/category/"
+              target="_self"
+              >
+              分类
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/tag/"
+              target="_self"
+              >
+              标签
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/link/"
+              target="_self"
+              >
+              友链
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/about/"
+              target="_self"
+              >
+              关于
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/atom.xml"
+              target="_blank"
+              >
+              RSS
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/search/"
+              target="_self"
+              >
+              搜索
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-post">
+    
+
+    
+  <section class="duoshuo-comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="" data-title="如何用wordpress作为后端快速开发一个小程序" data-url="http://blog.i-fanr.com/2017/11/06/minapps/index.html"></div>
+    <!-- 多说评论框 end -->
+  </section>
+
+
+
+
+  <script type="text/javascript">
+  var duoshuoQuery = {short_name:"fants"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+
+
+  </div>
+
+  
+
+  <script type="text/javascript">
+  function loadScript(url, callback) {
+    var script = document.createElement('script')
+    script.type = 'text/javascript';
+
+    if (script.readyState) { //IE
+      script.onreadystatechange = function() {
+        if (script.readyState == 'loaded' ||
+          script.readyState == 'complete') {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else { //Others
+      script.onload = function() {
+        callback();
+      };
+    }
+
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  window.onload = function() {
+    loadScript('/js/bundle.js?235683', function() {
+      // load success
+    });
+  }
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>

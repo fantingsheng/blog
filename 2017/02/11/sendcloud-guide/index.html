@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+
+
+  <html class="light page-post">
+
+
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>SendCloud邮件系统使用注意事项 | Write more, Think more</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="SendCloud,邮件,">
+  
+
+  <meta name="description" content="SendCloud 邮件发送系统注意事项1. 去掉代发的显示：保证发信域名和发信人地址一致，腾讯邮箱接收不再显示代发的方法：代码中将from参数写成xxx@your.domain.com  your.domain.com 代表相应API_USER发信域名2. 付费用户可以去掉邮件底部取消订阅按钮3. 垃圾邮件防止策略，域名预热白皮书1. 邮件进垃圾箱跟用户发信内容、发信域名评分、IP质量等情况息息">
+<meta name="keywords" content="SendCloud,邮件">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SendCloud邮件系统使用注意事项">
+<meta property="og:url" content="http://blog.i-fanr.com/2017/02/11/sendcloud-guide/index.html">
+<meta property="og:site_name" content="Write more, Think more">
+<meta property="og:description" content="SendCloud 邮件发送系统注意事项1. 去掉代发的显示：保证发信域名和发信人地址一致，腾讯邮箱接收不再显示代发的方法：代码中将from参数写成xxx@your.domain.com  your.domain.com 代表相应API_USER发信域名2. 付费用户可以去掉邮件底部取消订阅按钮3. 垃圾邮件防止策略，域名预热白皮书1. 邮件进垃圾箱跟用户发信内容、发信域名评分、IP质量等情况息息">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2020-01-15T11:00:11.964Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="SendCloud邮件系统使用注意事项">
+<meta name="twitter:description" content="SendCloud 邮件发送系统注意事项1. 去掉代发的显示：保证发信域名和发信人地址一致，腾讯邮箱接收不再显示代发的方法：代码中将from参数写成xxx@your.domain.com  your.domain.com 代表相应API_USER发信域名2. 付费用户可以去掉邮件底部取消订阅按钮3. 垃圾邮件防止策略，域名预热白皮书1. 邮件进垃圾箱跟用户发信内容、发信域名评分、IP质量等情况息息">
+
+  
+    <link rel="alternate" href="/atom.xml" title="Write more, Think more" type="application/atom+xml">
+  
+
+  
+    <link rel="icon" href="/images/favicon.ico">
+  
+
+  <link href="/css/styles.css?v=028c63b1" rel="stylesheet">
+
+
+  
+    <link rel="stylesheet" href="/css/personal-style.css">
+  
+
+  
+
+  
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?adfdc28b1809abcd238ff50a1a364033";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+  
+     <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
+  
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-1398727179052429",
+      enable_page_level_ads: true
+    });
+  </script>
+  
+</head>
+</html>
+<body>
+
+
+  
+    <span id="toolbox-mobile" class="toolbox-mobile">首页</span>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">首页</span>
+      <i class="icon-angle-down"></i>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/archives/"
+            target="_self"
+            >
+            博客
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/category/"
+            target="_self"
+            >
+            分类
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/tag/"
+            target="_self"
+            >
+            标签
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/link/"
+            target="_self"
+            >
+            友链
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/about/"
+            target="_self"
+            >
+            关于
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/atom.xml"
+            target="_blank"
+            >
+            RSS
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/search/"
+            target="_self"
+            >
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#SendCloud-邮件发送系统注意事项"><span class="toc-text">SendCloud 邮件发送系统注意事项</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-去掉代发的显示：保证发信域名和发信人地址一致，腾讯邮箱接收不再显示代发的方法：代码中将from参数写成xxx-your-domain-com-your-domain-com-代表相应API-USER发信域名"><span class="toc-text">1. 去掉代发的显示：保证发信域名和发信人地址一致，腾讯邮箱接收不再显示代发的方法：代码中将from参数写成xxx@your.domain.com  your.domain.com 代表相应API_USER发信域名</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-付费用户可以去掉邮件底部取消订阅按钮"><span class="toc-text">2. 付费用户可以去掉邮件底部取消订阅按钮</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-垃圾邮件防止策略，域名预热白皮书"><span class="toc-text">3. 垃圾邮件防止策略，域名预热白皮书</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-无效邮件包括："><span class="toc-text">4. 无效邮件包括：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-信誉度"><span class="toc-text">5. 信誉度</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-各项统计指标说明："><span class="toc-text">6. 各项统计指标说明：</span></a></li></ol></li></ol>
+  </div>
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-sendcloud-guide" class="article article-type-post" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">SendCloud邮件系统使用注意事项</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2017.02.11</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>Timfan</span>
+        </span>
+      
+
+      
+  <span class="article-category">
+    <i class="icon-list"></i>
+    <a class="article-category-link" href="/categories/技术/">技术</a>
+  </span>
+
+
+
+      
+
+      
+        <i class="fa fa-eye"></i> 
+          <span id="busuanzi_container_page_pv">
+           &nbsp热度 <span id="busuanzi_value_page_pv">
+            <i class="fa fa-spinner fa-spin"></i></span>℃
+          </span>
+       
+
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <h3 id="SendCloud-邮件发送系统注意事项"><a href="#SendCloud-邮件发送系统注意事项" class="headerlink" title="SendCloud 邮件发送系统注意事项"></a>SendCloud 邮件发送系统注意事项</h3><h4 id="1-去掉代发的显示：保证发信域名和发信人地址一致，腾讯邮箱接收不再显示代发的方法：代码中将from参数写成xxx-your-domain-com-your-domain-com-代表相应API-USER发信域名"><a href="#1-去掉代发的显示：保证发信域名和发信人地址一致，腾讯邮箱接收不再显示代发的方法：代码中将from参数写成xxx-your-domain-com-your-domain-com-代表相应API-USER发信域名" class="headerlink" title="1. 去掉代发的显示：保证发信域名和发信人地址一致，腾讯邮箱接收不再显示代发的方法：代码中将from参数写成xxx@your.domain.com  your.domain.com 代表相应API_USER发信域名"></a>1. 去掉代发的显示：保证发信域名和发信人地址一致，腾讯邮箱接收不再显示代发的方法：代码中将from参数写成xxx@your.domain.com  your.domain.com 代表相应API_USER发信域名</h4><h4 id="2-付费用户可以去掉邮件底部取消订阅按钮"><a href="#2-付费用户可以去掉邮件底部取消订阅按钮" class="headerlink" title="2. 付费用户可以去掉邮件底部取消订阅按钮"></a>2. 付费用户可以去掉邮件底部取消订阅按钮</h4><h4 id="3-垃圾邮件防止策略，域名预热白皮书"><a href="#3-垃圾邮件防止策略，域名预热白皮书" class="headerlink" title="3. 垃圾邮件防止策略，域名预热白皮书"></a>3. 垃圾邮件防止策略，域名预热白皮书</h4><pre><code>1. 邮件进垃圾箱跟用户发信内容、发信域名评分、IP质量等情况息息相关，SendCloud密切关注着IP的备案情况和评分情况，以保证提供优质的IP供用户发信。当出现邮件进垃圾箱时，如果是触发邮件，SendCloud可以协助用户进行申诉；如果是批量邮件，SendCloud可以提供内容或者发信行为的调整意见
+</code></pre><h4 id="4-无效邮件包括："><a href="#4-无效邮件包括：" class="headerlink" title="4. 无效邮件包括："></a>4. 无效邮件包括：</h4><pre><code>1. 收件人在sendcloud黑名单中
+2. 收件人在取消订阅列表中
+3. esp服务器不可达
+4. 收件人格式错误
+5. ip或者域名被拒
+6. 收件人不存在
+7. 发件人或者收件人被拒
+8. 被判为垃圾邮件
+</code></pre><h4 id="5-信誉度"><a href="#5-信誉度" class="headerlink" title="5. 信誉度"></a>5. 信誉度</h4><pre><code>用户在 SendCloud 平台的信誉评分. 「信誉度」和「当天请求额度」是高度正相关的两个数值. 当信誉度小于 0 时, 当天请求额度为 0 .
+此评分是由 SendCloud 根据用户的邮件发送数据实时计算出来的
+    * ++ 优质的「送达率」,「打开率」,「点击率」会促成加分
+    * -- 大量的「无效地址」,「垃圾举报」,「取消订阅」则会促成减分
+</code></pre><h4 id="6-各项统计指标说明："><a href="#6-各项统计指标说明：" class="headerlink" title="6. 各项统计指标说明："></a>6. 各项统计指标说明：</h4><pre><code>1. 打开：用户打开邮件的次数，即使是同一封邮件，打开几次就计算几次。
+2. 点击：用户点击邮件中链接的次数，即使是同一封邮件，点击几次就计算几次。
+3. 独立打开：终端用户独立打开邮件的次数，同一封邮件多次打开算作一次。
+4. 独立点击：终端用户独立点击邮件中链接的次数，同一封邮件多次点击算作一次。
+5. 软退信（soft bounce）是指下列任何情况之一造成的邮件无法送达：
+    1.  由于收件方邮件服务器的原因没有形成反应。这种情形可能是暂时的，也可能会持续一段时间，这期间将形成退信；
+    2.  用户电子邮箱空间没有足够容量接收邮件。邮箱空间已满的情况下会形成退信，如果用户对电子邮箱进行清理，删除部分邮件之后，这个邮箱还有可能正常使用。
+6. 垃圾邮件举报：用户点击取消订阅选择垃圾邮件选项
+</code></pre>
+    
+  </div>
+</article>
+
+</div>
+
+
+  <div class="text-center donation">
+    <div class="inner-donation">
+      <span class="btn-donation">支持一下</span>
+      <div class="donation-body">
+        <div class="tip text-center">扫一扫，支持Timfan</div>
+        <ul class="theme.donation.items.length">
+        
+          <li class="item">
+            <img src="/images/qr-wechat.png" alt="">
+          </li>
+        
+          <li class="item">
+            <img src="/images/qr-alipay.jpg" alt="">
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal">
+  <span id="cover" class="cover hide"></span>
+  <div id="modal-dialog" class="modal-dialog hide-dialog">
+    <div class="modal-header">
+      <span id="close" class="btn-close">关闭</span>
+    </div>
+    <hr>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/archives/"
+              target="_self"
+              >
+              博客
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/category/"
+              target="_self"
+              >
+              分类
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/tag/"
+              target="_self"
+              >
+              标签
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/link/"
+              target="_self"
+              >
+              友链
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/about/"
+              target="_self"
+              >
+              关于
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/atom.xml"
+              target="_blank"
+              >
+              RSS
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/search/"
+              target="_self"
+              >
+              搜索
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-post">
+    
+
+    
+  <section class="duoshuo-comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="" data-title="SendCloud邮件系统使用注意事项" data-url="http://blog.i-fanr.com/2017/02/11/sendcloud-guide/index.html"></div>
+    <!-- 多说评论框 end -->
+  </section>
+
+
+
+
+  <script type="text/javascript">
+  var duoshuoQuery = {short_name:"fants"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+
+
+  </div>
+
+  
+
+  <script type="text/javascript">
+  function loadScript(url, callback) {
+    var script = document.createElement('script')
+    script.type = 'text/javascript';
+
+    if (script.readyState) { //IE
+      script.onreadystatechange = function() {
+        if (script.readyState == 'loaded' ||
+          script.readyState == 'complete') {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else { //Others
+      script.onload = function() {
+        callback();
+      };
+    }
+
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  window.onload = function() {
+    loadScript('/js/bundle.js?235683', function() {
+      // load success
+    });
+  }
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>

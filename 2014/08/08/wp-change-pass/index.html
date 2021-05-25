@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+
+  <html class="light page-post">
+
+
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>WordPress用户密码忘记且无法重置的解决办法 | Write more, Think more</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="Wordpress,">
+  
+
+  <meta name="description" content="你忘记密码通过找回密码页面发送重置密码页面的时候可能还会遇到接收不到邮件的情况。怎么办呢?垃圾邮件中也没有。。。怎么办？ 办法1：通过phpMyAdmin来重置密码step1：通过cpanel或者DA等主机管理工具登陆到phpMyAdmin ，并选择自己使用的数据库； step2：打开wp_users 表（或者会带有前缀的，但表名以users结尾）； step3：找到自己的用户名并编辑user_p">
+<meta name="keywords" content="Wordpress">
+<meta property="og:type" content="article">
+<meta property="og:title" content="WordPress用户密码忘记且无法重置的解决办法">
+<meta property="og:url" content="http://blog.i-fanr.com/2014/08/08/wp-change-pass/index.html">
+<meta property="og:site_name" content="Write more, Think more">
+<meta property="og:description" content="你忘记密码通过找回密码页面发送重置密码页面的时候可能还会遇到接收不到邮件的情况。怎么办呢?垃圾邮件中也没有。。。怎么办？ 办法1：通过phpMyAdmin来重置密码step1：通过cpanel或者DA等主机管理工具登陆到phpMyAdmin ，并选择自己使用的数据库； step2：打开wp_users 表（或者会带有前缀的，但表名以users结尾）； step3：找到自己的用户名并编辑user_p">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2020-01-15T10:52:52.474Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="WordPress用户密码忘记且无法重置的解决办法">
+<meta name="twitter:description" content="你忘记密码通过找回密码页面发送重置密码页面的时候可能还会遇到接收不到邮件的情况。怎么办呢?垃圾邮件中也没有。。。怎么办？ 办法1：通过phpMyAdmin来重置密码step1：通过cpanel或者DA等主机管理工具登陆到phpMyAdmin ，并选择自己使用的数据库； step2：打开wp_users 表（或者会带有前缀的，但表名以users结尾）； step3：找到自己的用户名并编辑user_p">
+
+  
+    <link rel="alternate" href="/atom.xml" title="Write more, Think more" type="application/atom+xml">
+  
+
+  
+    <link rel="icon" href="/images/favicon.ico">
+  
+
+  <link href="/css/styles.css?v=028c63b1" rel="stylesheet">
+
+
+  
+    <link rel="stylesheet" href="/css/personal-style.css">
+  
+
+  
+
+  
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?adfdc28b1809abcd238ff50a1a364033";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+  
+     <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
+  
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-1398727179052429",
+      enable_page_level_ads: true
+    });
+  </script>
+  
+</head>
+</html>
+<body>
+
+
+  
+    <span id="toolbox-mobile" class="toolbox-mobile">首页</span>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">首页</span>
+      <i class="icon-angle-down"></i>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/archives/"
+            target="_self"
+            >
+            博客
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/category/"
+            target="_self"
+            >
+            分类
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/tag/"
+            target="_self"
+            >
+            标签
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/link/"
+            target="_self"
+            >
+            友链
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/about/"
+            target="_self"
+            >
+            关于
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/atom.xml"
+            target="_blank"
+            >
+            RSS
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/search/"
+            target="_self"
+            >
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#办法1：通过phpMyAdmin来重置密码"><span class="toc-text">办法1：通过phpMyAdmin来重置密码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#办法2：通过functions-php-来重置密码"><span class="toc-text">办法2：通过functions.php 来重置密码</span></a></li></ol>
+  </div>
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-wp-change-pass" class="article article-type-post" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">WordPress用户密码忘记且无法重置的解决办法</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2014.08.08</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>Timfan</span>
+        </span>
+      
+
+      
+  <span class="article-category">
+    <i class="icon-list"></i>
+    <a class="article-category-link" href="/categories/技术/">技术</a>
+  </span>
+
+
+
+      
+
+      
+        <i class="fa fa-eye"></i> 
+          <span id="busuanzi_container_page_pv">
+           &nbsp热度 <span id="busuanzi_value_page_pv">
+            <i class="fa fa-spinner fa-spin"></i></span>℃
+          </span>
+       
+
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <p>你忘记密码通过找回密码页面发送重置密码页面的时候可能还会遇到接收不到邮件的情况。怎么办呢?垃圾邮件中也没有。。。怎么办？</p>
+<h3 id="办法1：通过phpMyAdmin来重置密码"><a href="#办法1：通过phpMyAdmin来重置密码" class="headerlink" title="办法1：通过phpMyAdmin来重置密码"></a>办法1：通过phpMyAdmin来重置密码</h3><p>step1：通过cpanel或者DA等主机管理工具登陆到phpMyAdmin ，并选择自己使用的数据库；</p>
+<p>step2：打开wp_users 表（或者会带有前缀的，但表名以users结尾）；</p>
+<p>step3：找到自己的用户名并编辑user_pass列，输入你想要的密码并在函数下拉菜单中选择MD5 这个函数；</p>
+<p>step4：点击GO，就可以保存密码，然后重新登陆下WordPress试试。</p>
+<h3 id="办法2：通过functions-php-来重置密码"><a href="#办法2：通过functions-php-来重置密码" class="headerlink" title="办法2：通过functions.php 来重置密码"></a>办法2：通过functions.php 来重置密码</h3><p>上述办法还是有点技术含量的，如果没折腾过主机的朋友，估计会很纠结，不过通过functions.php 来重置稍微简单点了。</p>
+<p>step1：把现在使用的主题的functions.php 下载下来（ftp或者通过主机控制面板都可以）；</p>
+<p>step2：在functions.php 中添加代码，其中NewPassword是你想设置的新密码，1是你要重置密码的id号（一般情况下创始人的id为1）。</p>
+<p><code>wp_set_password(‘NewPassword’, 1);</code></p>
+<p>step3：保存该文件并上传到你当前使用的主题下面；</p>
+<p>step4：随便访问你WordPress任何一篇文章，然后尝试用新密码登录；</p>
+<p>step5：如果你能够登陆成功了，就把上述代码从functions.php移除保存并重新上传到当前主题目录下。</p>
+<p>OK，两种重置办法就讲到这里。</p>
+
+    
+  </div>
+</article>
+
+</div>
+
+
+  <div class="text-center donation">
+    <div class="inner-donation">
+      <span class="btn-donation">支持一下</span>
+      <div class="donation-body">
+        <div class="tip text-center">扫一扫，支持Timfan</div>
+        <ul class="theme.donation.items.length">
+        
+          <li class="item">
+            <img src="/images/qr-wechat.png" alt="">
+          </li>
+        
+          <li class="item">
+            <img src="/images/qr-alipay.jpg" alt="">
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal">
+  <span id="cover" class="cover hide"></span>
+  <div id="modal-dialog" class="modal-dialog hide-dialog">
+    <div class="modal-header">
+      <span id="close" class="btn-close">关闭</span>
+    </div>
+    <hr>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/archives/"
+              target="_self"
+              >
+              博客
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/category/"
+              target="_self"
+              >
+              分类
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/tag/"
+              target="_self"
+              >
+              标签
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/link/"
+              target="_self"
+              >
+              友链
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/about/"
+              target="_self"
+              >
+              关于
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/atom.xml"
+              target="_blank"
+              >
+              RSS
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/search/"
+              target="_self"
+              >
+              搜索
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-post">
+    
+
+    
+  <section class="duoshuo-comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="" data-title="WordPress用户密码忘记且无法重置的解决办法" data-url="http://blog.i-fanr.com/2014/08/08/wp-change-pass/index.html"></div>
+    <!-- 多说评论框 end -->
+  </section>
+
+
+
+
+  <script type="text/javascript">
+  var duoshuoQuery = {short_name:"fants"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+
+
+  </div>
+
+  
+
+  <script type="text/javascript">
+  function loadScript(url, callback) {
+    var script = document.createElement('script')
+    script.type = 'text/javascript';
+
+    if (script.readyState) { //IE
+      script.onreadystatechange = function() {
+        if (script.readyState == 'loaded' ||
+          script.readyState == 'complete') {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else { //Others
+      script.onload = function() {
+        callback();
+      };
+    }
+
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  window.onload = function() {
+    loadScript('/js/bundle.js?235683', function() {
+      // load success
+    });
+  }
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>
